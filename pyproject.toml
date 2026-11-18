@@ -1,7 +1,7 @@
 [project]
 name = "comfyui-h3-av-latent-wrap"
-description = "MiniMax H3 AV-latent wrapper for img2img/face refine, and an xyxy-bbox feathered crop paste."
-version = "0.1.0"
+description = "MiniMax H3 AV-latent wrapper for img2img/face refine, xyxy-bbox feathered crop paste, and multi-face refine (main face by reference similarity)."
+version = "0.2.0"
 license = { file = "LICENSE" }
 dependencies = []
 

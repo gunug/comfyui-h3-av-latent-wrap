@@ -1,6 +1,6 @@
 # comfyui-h3-av-latent-wrap
 
-Two small ComfyUI nodes for **MiniMax H3** face refine and other img2img work, plus an example workflow.
+Small ComfyUI nodes for **MiniMax H3** face refine and other img2img work, plus two example workflows.
 
 ## Nodes
 
@@ -24,6 +24,25 @@ Easy-Use `imageUncropFromBBOX` reads `(x, y, w, h)`, so with this bbox it pastes
 
 - `feather`: edge falloff as a fraction of the crop's shorter side (default 0.15).
 
+### Face SEGS Split by Reference (main / others)
+`FaceSegsSplitByReference` · category `ImpactPack/Util`
+
+Splits detected face SEGS (Impact Pack) into one **main** face and the **others**.
+With a `CLIP_VISION` input (for example `clip_vision_h.safetensors`), the main face is the one most similar to `reference_face`.
+Without it, the largest face is the main face. This stops a bigger face of another person from being refined into the reference identity.
+
+- `min_face_size`: faces whose shorter bbox side is below this are skipped (not refined). Very small, blurred or turned faces are unreliable.
+- `report`: one line per face (bbox, size, score, MAIN / refine / skip).
+
+### MiniMax H3 Refine Faces (no reference, all SEGS)
+`H3RefineFaces` · category `model/latent/minimax`
+
+Runs a light MiniMax H3 img2img pass on every face in SEGS without an identity reference, then pastes each one back with a feathered edge.
+Use it on `other_segs` so the other people keep their own faces and only get sharper.
+
+- `sigmas`: a low start sigma keeps the face, for example `0.45, 0.3, 0.15, 0.0`.
+- `resolution` (long side of each crop), `padding`, `feather`, `color_match`.
+
 ## Example workflow
 
 `example_workflows/pika_h3_ref2va_face_refine.json` is a MiniMax H3 ref2va still image with a face refine pass.
@@ -33,6 +52,13 @@ Easy-Use `imageUncropFromBBOX` reads `(x, y, w, h)`, so with this bbox it pastes
 3. Face detect: Impact `face_yolov8m`, then the KJ `ImageCropByMaskAndResize` crop (1024, padding 96).
 4. Refine: a second `MiniMaxH3ReferenceToVideo` call (face reference) → `RepeatImageBatch` ×5 → `VAEEncode` → **Wrap AV Latent**. Then `SamplerCustomAdvanced` runs with sigmas `0.45, 0.333, 0.2, 0` (about 0.45 denoise).
 5. Composite: KJ `ColorMatch` → **Paste Crop (xyxy)** → save.
+
+`example_workflows/pika_h3_ref2va_multi_face_refine.json` is the multi-face version (recommended for photos with several people).
+
+- **Face SEGS Split by Reference** picks the main face with CLIP Vision. It is refined with the face reference (sigmas start 0.6).
+- **Refine Faces** lightly refines the other faces without a reference (sigmas start 0.45).
+- Faces smaller than 48 px are skipped.
+- Extra model: `clip_vision_h.safetensors` in `models/clip_vision`.
 
 Required: ComfyUI ≥ 0.45, ComfyUI-KJNodes ≥ 1.5.4, ComfyUI-Impact-Pack, and PlagueKind-Nodes (AdaLN LoRA Fix).
 The models are from [Comfy-Org/MiniMax-H3](https://huggingface.co/Comfy-Org/MiniMax-H3): the `ref2va` pruned UNET, the Qwen3-VL text encoder, and the sol VAE.

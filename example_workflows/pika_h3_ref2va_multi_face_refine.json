@@ -1,0 +1,4387 @@
+{
+ "id": "afd53196-3359-48f2-9d0b-6736374afa8d",
+ "revision": 0,
+ "last_node_id": 232,
+ "last_link_id": 435,
+ "nodes": [
+  {
+   "id": 117,
+   "type": "MarkdownNote",
+   "pos": [
+    -5300,
+    5480
+   ],
+   "size": [
+    440,
+    830
+   ],
+   "flags": {},
+   "order": 0,
+   "mode": 0,
+   "inputs": [],
+   "outputs": [],
+   "title": "Note: Model Links",
+   "properties": {
+    "widget_ue_connectable": {}
+   },
+   "widgets_values": [
+    "Guide: [Subgraph](https://docs.comfy.org/interface/features/subgraph)\n\n- GitHub: https://github.com/Pika-Labs/Pika-H3-Flex\n- Hugging Face: https://huggingface.co/Pika-Labs/Pika-H3-Flex\n\n## Input Assets\n\n- [lastP_spin_jump_hole.png](https://raw.githubusercontent.com/Comfy-Org/workflow_templates/refs/heads/main/input/lastP_spin_jump_hole.png)\n- [ref_popart_woman.png](https://raw.githubusercontent.com/Comfy-Org/workflow_templates/refs/heads/main/input/ref_popart_woman.png)\n\n\n## Model Links\n\n- [Hugging Face:Comfy-Org/MiniMax-H3](https://huggingface.co/Comfy-Org/MiniMax-H3)\n\n**vae**\n\n- [minimax_h3_video_vae_int8_convrot.safetensors](https://huggingface.co/Comfy-Org/MiniMax-H3/resolve/main/vae/minimax_h3_video_vae_int8_convrot.safetensors) (2.62 GB)\n- [minimax_h3_audio_vae_fp32.safetensors](https://huggingface.co/Comfy-Org/MiniMax-H3/resolve/main/vae/minimax_h3_audio_vae_fp32.safetensors) (577.2 MB)\n\n**diffusion_models**\n\n- [minimax_h3_fl2va_pruned_int8_convrot.safetensors](https://huggingface.co/Comfy-Org/MiniMax-H3/resolve/main/diffusion_models/minimax_h3_fl2va_pruned_int8_convrot.safetensors) (19.53 GB)\n\n**text_encoders**\n\n- [qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors](https://huggingface.co/Comfy-Org/MiniMax-H3/resolve/main/text_encoders/qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors) (14.61 GB)\n\n**loras**\n\n- [pika_h3_flex_fl2va_v1_bf16.safetensors](https://huggingface.co/Comfy-Org/MiniMax-H3/resolve/main/loras/pika_h3_flex_fl2va_v1_bf16.safetensors)\n\n\n## Model Storage Location\n\n```\n📂 ComfyUI/\n├── 📂 models/\n│   ├── 📂 vae/\n│   │   ├── minimax_h3_video_vae_int8_convrot.safetensors\n│   │   └── minimax_h3_audio_vae_fp32.safetensors\n│   ├── 📂 diffusion_models/\n│   │   └── minimax_h3_fl2va_pruned_int8_convrot.safetensors\n│   ├── 📂 text_encoders/\n│   │   └── qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors\n│   └── 📂 loras/\n│       └── pika_h3_flex_fl2va_v1_bf16.safetensors\n```\n\n## Report Issue\n\nNote: Please update ComfyUI first ([guide](https://docs.comfy.org/installation/update_comfyui)) and prepare required models. Desktop/Cloud updates follow stable releases, so some nightly-supported models may not be available yet.\n\n- Cannot run / runtime errors: [ComfyUI/issues](https://github.com/comfyanonymous/ComfyUI/issues)\n- UI / frontend issues: [ComfyUI_frontend/issues](https://github.com/Comfy-Org/ComfyUI_frontend/issues)\n- Workflow issues: [workflow_templates/issues](https://github.com/Comfy-Org/workflow_templates/issues)\n"
+   ],
+   "widgets_values_named": {
+    "text": "Guide: [Subgraph](https://docs.comfy.org/interface/features/subgraph)\n\n- GitHub: https://github.com/Pika-Labs/Pika-H3-Flex\n- Hugging Face: https://huggingface.co/Pika-Labs/Pika-H3-Flex\n\n## Input Assets\n\n- [lastP_spin_jump_hole.png](https://raw.githubusercontent.com/Comfy-Org/workflow_templates/refs/heads/main/input/lastP_spin_jump_hole.png)\n- [ref_popart_woman.png](https://raw.githubusercontent.com/Comfy-Org/workflow_templates/refs/heads/main/input/ref_popart_woman.png)\n\n\n## Model Links\n\n- [Hugging Face:Comfy-Org/MiniMax-H3](https://huggingface.co/Comfy-Org/MiniMax-H3)\n\n**vae**\n\n- [minimax_h3_video_vae_int8_convrot.safetensors](https://huggingface.co/Comfy-Org/MiniMax-H3/resolve/main/vae/minimax_h3_video_vae_int8_convrot.safetensors) (2.62 GB)\n- [minimax_h3_audio_vae_fp32.safetensors](https://huggingface.co/Comfy-Org/MiniMax-H3/resolve/main/vae/minimax_h3_audio_vae_fp32.safetensors) (577.2 MB)\n\n**diffusion_models**\n\n- [minimax_h3_fl2va_pruned_int8_convrot.safetensors](https://huggingface.co/Comfy-Org/MiniMax-H3/resolve/main/diffusion_models/minimax_h3_fl2va_pruned_int8_convrot.safetensors) (19.53 GB)\n\n**text_encoders**\n\n- [qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors](https://huggingface.co/Comfy-Org/MiniMax-H3/resolve/main/text_encoders/qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors) (14.61 GB)\n\n**loras**\n\n- [pika_h3_flex_fl2va_v1_bf16.safetensors](https://huggingface.co/Comfy-Org/MiniMax-H3/resolve/main/loras/pika_h3_flex_fl2va_v1_bf16.safetensors)\n\n\n## Model Storage Location\n\n```\n📂 ComfyUI/\n├── 📂 models/\n│   ├── 📂 vae/\n│   │   ├── minimax_h3_video_vae_int8_convrot.safetensors\n│   │   └── minimax_h3_audio_vae_fp32.safetensors\n│   ├── 📂 diffusion_models/\n│   │   └── minimax_h3_fl2va_pruned_int8_convrot.safetensors\n│   ├── 📂 text_encoders/\n│   │   └── qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors\n│   └── 📂 loras/\n│       └── pika_h3_flex_fl2va_v1_bf16.safetensors\n```\n\n## Report Issue\n\nNote: Please update ComfyUI first ([guide](https://docs.comfy.org/installation/update_comfyui)) and prepare required models. Desktop/Cloud updates follow stable releases, so some nightly-supported models may not be available yet.\n\n- Cannot run / runtime errors: [ComfyUI/issues](https://github.com/comfyanonymous/ComfyUI/issues)\n- UI / frontend issues: [ComfyUI_frontend/issues](https://github.com/Comfy-Org/ComfyUI_frontend/issues)\n- Workflow issues: [workflow_templates/issues](https://github.com/Comfy-Org/workflow_templates/issues)\n"
+   },
+   "color": "#222",
+   "bgcolor": "#000"
+  },
+  {
+   "id": 147,
+   "type": "LoadImage",
+   "pos": [
+    -3950,
+    4000
+   ],
+   "size": [
+    400,
+    480
+   ],
+   "flags": {},
+   "order": 1,
+   "mode": 0,
+   "inputs": [
+    {
+     "label": "image",
+     "localized_name": "이미지",
+     "name": "image",
+     "type": "COMBO",
+     "widget": {
+      "name": "image"
+     },
+     "link": null
+    },
+    {
+     "label": "upload",
+     "localized_name": "업로드할 파일 선택",
+     "name": "upload",
+     "type": "IMAGEUPLOAD",
+     "widget": {
+      "name": "upload"
+     },
+     "link": null
+    }
+   ],
+   "outputs": [
+    {
+     "label": "IMAGE",
+     "localized_name": "이미지",
+     "name": "IMAGE",
+     "type": "IMAGE",
+     "links": [
+      368,
+      374
+     ]
+    },
+    {
+     "label": "MASK",
+     "localized_name": "마스크",
+     "name": "MASK",
+     "type": "MASK",
+     "links": []
+    }
+   ],
+   "title": "레퍼런스 캐릭터 시트 (Picture 1)",
+   "properties": {
+    "Node name for S&R": "LoadImage",
+    "widget_ue_connectable": {}
+   },
+   "widgets_values": [
+    "image (46).png",
+    "image"
+   ],
+   "widgets_values_named": {
+    "image": "image (46).png",
+    "upload": "image"
+   }
+  },
+  {
+   "id": 154,
+   "type": "VAELoader",
+   "pos": [
+    -4650,
+    4410
+   ],
+   "size": [
+    640,
+    100
+   ],
+   "flags": {},
+   "order": 2,
+   "mode": 0,
+   "inputs": [
+    {
+     "label": "vae_name",
+     "localized_name": "vae 파일명",
+     "name": "vae_name",
+     "type": "COMBO",
+     "widget": {
+      "name": "vae_name"
+     },
+     "link": null
+    }
+   ],
+   "outputs": [
+    {
+     "label": "VAE",
+     "localized_name": "VAE",
+     "name": "VAE",
+     "type": "VAE",
+     "links": [
+      271,
+      280,
+      367,
+      385,
+      390,
+      399,
+      428
+     ]
+    }
+   ],
+   "properties": {
+    "Node name for S&R": "VAELoader",
+    "cnr_id": "comfy-core",
+    "models": [
+     {
+      "name": "minimax_h3_video_vae_int8_convrot.safetensors",
+      "directory": "vae",
+      "url": "https://huggingface.co/Comfy-Org/MiniMax-H3/resolve/main/vae/minimax_h3_video_vae_int8_convrot.safetensors"
+     }
+    ],
+    "ver": "0.33.0",
+    "widget_ue_connectable": {}
+   },
+   "widgets_values": [
+    "minimax_h3_sol_vae_int8_convrot.safetensors"
+   ],
+   "widgets_values_named": {
+    "vae_name": "minimax_h3_sol_vae_int8_convrot.safetensors"
+   }
+  },
+  {
+   "id": 157,
+   "type": "VAEDecode",
+   "pos": [
+    -1120,
+    4000
+   ],
+   "size": [
+    230,
+    80
+   ],
+   "flags": {
+    "collapsed": false
+   },
+   "order": 28,
+   "mode": 0,
+   "inputs": [
+    {
+     "label": "samples",
+     "localized_name": "잠재 데이터",
+     "name": "samples",
+     "type": "LATENT",
+     "link": 285
+    },
+    {
+     "label": "vae",
+     "localized_name": "vae",
+     "name": "vae",
+     "type": "VAE",
+     "link": 271
+    }
+   ],
+   "outputs": [
+    {
+     "label": "IMAGE",
+     "localized_name": "이미지",
+     "name": "IMAGE",
+     "type": "IMAGE",
+     "links": [
+      364
+     ]
+    }
+   ],
+   "properties": {
+    "Node name for S&R": "VAEDecode",
+    "cnr_id": "comfy-core",
+    "ver": "0.33.0",
+    "widget_ue_connectable": {}
+   }
+  },
+  {
+   "id": 158,
+   "type": "KSamplerSelect",
+   "pos": [
+    -1600,
+    4160
+   ],
+   "size": [
+    370,
+    90
+   ],
+   "flags": {},
+   "order": 3,
+   "mode": 0,
+   "inputs": [
+    {
+     "label": "sampler_name",
+     "localized_name": "샘플러 이름",
+     "name": "sampler_name",
+     "type": "COMBO",
+     "widget": {
+      "name": "sampler_name"
+     },
+     "link": null
+    }
+   ],
+   "outputs": [
+    {
+     "label": "SAMPLER",
+     "localized_name": "샘플러",
+     "name": "SAMPLER",
+     "type": "SAMPLER",
+     "links": [
+      274,
+      395,
+      429
+     ]
+    }
+   ],
+   "properties": {
+    "Node name for S&R": "KSamplerSelect",
+    "cnr_id": "comfy-core",
+    "ver": "0.33.0",
+    "widget_ue_connectable": {}
+   },
+   "widgets_values": [
+    "lcm"
+   ],
+   "widgets_values_named": {
+    "sampler_name": "lcm"
+   }
+  },
+  {
+   "id": 159,
+   "type": "SamplerCustomAdvanced",
+   "pos": [
+    -1600,
+    4640
+   ],
+   "size": [
+    212.3638671875,
+    119.33149281974966
+   ],
+   "flags": {},
+   "order": 27,
+   "mode": 0,
+   "inputs": [
+    {
+     "label": "noise",
+     "localized_name": "노이즈",
+     "name": "noise",
+     "type": "NOISE",
+     "link": 272
+    },
+    {
+     "label": "guider",
+     "localized_name": "가이더",
+     "name": "guider",
+     "type": "GUIDER",
+     "link": 273
+    },
+    {
+     "label": "sampler",
+     "localized_name": "샘플러",
+     "name": "sampler",
+     "type": "SAMPLER",
+     "link": 274
+    },
+    {
+     "label": "sigmas",
+     "localized_name": "시그마 배열",
+     "name": "sigmas",
+     "type": "SIGMAS",
+     "link": 288
+    },
+    {
+     "label": "latent_image",
+     "localized_name": "잠재 데이터",
+     "name": "latent_image",
+     "type": "LATENT",
+     "link": 373
+    }
+   ],
+   "outputs": [
+    {
+     "label": "output",
+     "localized_name": "출력",
+     "name": "output",
+     "type": "LATENT",
+     "links": [
+      285
+     ]
+    },
+    {
+     "label": "denoised_output",
+     "localized_name": "디노이즈 출력",
+     "name": "denoised_output",
+     "type": "LATENT",
+     "links": []
+    }
+   ],
+   "properties": {
+    "Node name for S&R": "SamplerCustomAdvanced",
+    "cnr_id": "comfy-core",
+    "ver": "0.33.0",
+    "widget_ue_connectable": {}
+   }
+  },
+  {
+   "id": 160,
+   "type": "BasicGuider",
+   "pos": [
+    -1600,
+    4490
+   ],
+   "size": [
+    370,
+    80
+   ],
+   "flags": {},
+   "order": 26,
+   "mode": 0,
+   "inputs": [
+    {
+     "label": "model",
+     "localized_name": "모델",
+     "name": "model",
+     "type": "MODEL",
+     "link": 348
+    },
+    {
+     "label": "conditioning",
+     "localized_name": "조건",
+     "name": "conditioning",
+     "type": "CONDITIONING",
+     "link": 372
+    }
+   ],
+   "outputs": [
+    {
+     "label": "GUIDER",
+     "localized_name": "가이드",
+     "name": "GUIDER",
+     "type": "GUIDER",
+     "links": [
+      273
+     ]
+    }
+   ],
+   "properties": {
+    "Node name for S&R": "BasicGuider",
+    "cnr_id": "comfy-core",
+    "ver": "0.33.0",
+    "widget_ue_connectable": {}
+   }
+  },
+  {
+   "id": 162,
+   "type": "CLIPLoader",
+   "pos": [
+    -4650,
+    4190
+   ],
+   "size": [
+    640,
+    150
+   ],
+   "flags": {},
+   "order": 4,
+   "mode": 0,
+   "inputs": [
+    {
+     "label": "clip_name",
+     "localized_name": "CLIP 파일명",
+     "name": "clip_name",
+     "type": "COMBO",
+     "widget": {
+      "name": "clip_name"
+     },
+     "link": null
+    },
+    {
+     "label": "type",
+     "localized_name": "유형",
+     "name": "type",
+     "type": "COMBO",
+     "widget": {
+      "name": "type"
+     },
+     "link": null
+    },
+    {
+     "label": "device",
+     "localized_name": "장치",
+     "name": "device",
+     "shape": 7,
+     "type": "COMBO",
+     "widget": {
+      "name": "device"
+     },
+     "link": null
+    }
+   ],
+   "outputs": [
+    {
+     "label": "CLIP",
+     "localized_name": "CLIP",
+     "name": "CLIP",
+     "type": "CLIP",
+     "links": [
+      279,
+      366,
+      384,
+      427
+     ]
+    }
+   ],
+   "properties": {
+    "Node name for S&R": "CLIPLoader",
+    "cnr_id": "comfy-core",
+    "models": [
+     {
+      "name": "qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors",
+      "directory": "text_encoders",
+      "url": "https://huggingface.co/Comfy-Org/MiniMax-H3/resolve/main/text_encoders/qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors"
+     }
+    ],
+    "ver": "0.33.0",
+    "widget_ue_connectable": {}
+   },
+   "widgets_values": [
+    "qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors",
+    "minimax",
+    "default"
+   ],
+   "widgets_values_named": {
+    "clip_name": "qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors",
+    "type": "minimax",
+    "device": "default"
+   }
+  },
+  {
+   "id": 163,
+   "type": "RandomNoise",
+   "pos": [
+    -1600,
+    4000
+   ],
+   "size": [
+    370,
+    90
+   ],
+   "flags": {},
+   "order": 5,
+   "mode": 0,
+   "inputs": [
+    {
+     "label": "noise_seed",
+     "localized_name": "노이즈 시드",
+     "name": "noise_seed",
+     "type": "INT",
+     "widget": {
+      "name": "noise_seed"
+     },
+     "link": null
+    }
+   ],
+   "outputs": [
+    {
+     "label": "NOISE",
+     "localized_name": "노이즈",
+     "name": "NOISE",
+     "type": "NOISE",
+     "links": [
+      272,
+      393
+     ]
+    }
+   ],
+   "properties": {
+    "Node name for S&R": "RandomNoise",
+    "cnr_id": "comfy-core",
+    "ver": "0.33.0",
+    "widget_ue_connectable": {}
+   },
+   "widgets_values": [
+    914506686744458,
+    "fixed"
+   ],
+   "widgets_values_named": {
+    "noise_seed": 914506686744458,
+    "control_after_generate": "fixed"
+   }
+  },
+  {
+   "id": 165,
+   "type": "MiniMaxH3ImageToVideo",
+   "pos": [
+    -2200,
+    4880
+   ],
+   "size": [
+    430,
+    550
+   ],
+   "flags": {},
+   "order": 18,
+   "mode": 2,
+   "inputs": [
+    {
+     "label": "clip",
+     "localized_name": "clip",
+     "name": "clip",
+     "type": "CLIP",
+     "link": 279
+    },
+    {
+     "label": "vae",
+     "localized_name": "vae",
+     "name": "vae",
+     "type": "VAE",
+     "link": 280
+    },
+    {
+     "label": "first_frame",
+     "localized_name": "first_frame",
+     "name": "first_frame",
+     "shape": 7,
+     "type": "IMAGE",
+     "link": 374
+    },
+    {
+     "label": "last_frame",
+     "localized_name": "last_frame",
+     "name": "last_frame",
+     "shape": 7,
+     "type": "IMAGE",
+     "link": null
+    },
+    {
+     "label": "prompt",
+     "localized_name": "prompt",
+     "name": "prompt",
+     "type": "STRING",
+     "widget": {
+      "name": "prompt"
+     },
+     "link": null
+    },
+    {
+     "label": "width",
+     "localized_name": "width",
+     "name": "width",
+     "type": "INT",
+     "widget": {
+      "name": "width"
+     },
+     "link": 302
+    },
+    {
+     "label": "height",
+     "localized_name": "height",
+     "name": "height",
+     "type": "INT",
+     "widget": {
+      "name": "height"
+     },
+     "link": 303
+    },
+    {
+     "label": "length",
+     "localized_name": "length",
+     "name": "length",
+     "type": "INT",
+     "widget": {
+      "name": "length"
+     },
+     "link": 284
+    }
+   ],
+   "outputs": [
+    {
+     "label": "positive",
+     "localized_name": "positive",
+     "name": "positive",
+     "type": "CONDITIONING",
+     "links": []
+    },
+    {
+     "label": "LATENT",
+     "localized_name": "잠재 데이터",
+     "name": "LATENT",
+     "type": "LATENT",
+     "links": []
+    }
+   ],
+   "properties": {
+    "Node name for S&R": "MiniMaxH3ImageToVideo",
+    "cnr_id": "comfy-core",
+    "ver": "0.33.0",
+    "widget_ue_connectable": {}
+   },
+   "widgets_values": [
+    "In a photo studio, a female model sits on a bar chair, while a man stands holding a DSLR camera, ready to take a photograph. Studio background.",
+    864,
+    1536,
+    73
+   ],
+   "widgets_values_named": {
+    "prompt": "In a photo studio, a female model sits on a bar chair, while a man stands holding a DSLR camera, ready to take a photograph. Studio background.",
+    "width": 864,
+    "height": 1536,
+    "length": 73
+   }
+  },
+  {
+   "id": 166,
+   "type": "ComfyMathExpression",
+   "pos": [
+    -4650,
+    5080
+   ],
+   "size": [
+    360,
+    170
+   ],
+   "flags": {
+    "collapsed": true
+   },
+   "order": 16,
+   "mode": 0,
+   "inputs": [
+    {
+     "label": "values.a",
+     "localized_name": "a",
+     "name": "values.a",
+     "type": "FLOAT,INT,BOOLEAN",
+     "link": 294
+    },
+    {
+     "label": "values.b",
+     "localized_name": "b",
+     "name": "values.b",
+     "shape": 7,
+     "type": "FLOAT,INT,BOOLEAN",
+     "link": null
+    },
+    {
+     "label": "expression",
+     "localized_name": "수식",
+     "name": "expression",
+     "type": "STRING",
+     "widget": {
+      "name": "expression"
+     },
+     "link": null
+    }
+   ],
+   "outputs": [
+    {
+     "label": "FLOAT",
+     "localized_name": "실수",
+     "name": "FLOAT",
+     "type": "FLOAT",
+     "links": []
+    },
+    {
+     "label": "INT",
+     "localized_name": "정수",
+     "name": "INT",
+     "type": "INT",
+     "links": [
+      284,
+      371
+     ]
+    },
+    {
+     "label": "BOOL",
+     "localized_name": "BOOL",
+     "name": "BOOL",
+     "type": "BOOLEAN",
+     "links": []
+    }
+   ],
+   "properties": {
+    "Node name for S&R": "ComfyMathExpression",
+    "cnr_id": "comfy-core",
+    "ver": "0.33.0",
+    "widget_ue_connectable": {}
+   },
+   "widgets_values": [
+    "max(5, round(a * 24)) + (5 - (max(5, round(a * 24)) % 17)) % 17"
+   ],
+   "widgets_values_named": {
+    "expression": "max(5, round(a * 24)) + (5 - (max(5, round(a * 24)) % 17)) % 17"
+   }
+  },
+  {
+   "id": 167,
+   "type": "PrimitiveFloat",
+   "pos": [
+    -4650,
+    4700
+   ],
+   "size": [
+    270,
+    90
+   ],
+   "flags": {},
+   "order": 6,
+   "mode": 0,
+   "inputs": [
+    {
+     "label": "value",
+     "localized_name": "값",
+     "name": "value",
+     "type": "FLOAT",
+     "widget": {
+      "name": "value"
+     },
+     "link": null
+    }
+   ],
+   "outputs": [
+    {
+     "label": "FLOAT",
+     "localized_name": "실수",
+     "name": "FLOAT",
+     "type": "FLOAT",
+     "links": [
+      294
+     ]
+    }
+   ],
+   "title": "Float (duration)",
+   "properties": {
+    "Node name for S&R": "PrimitiveFloat",
+    "cnr_id": "comfy-core",
+    "ver": "0.33.0",
+    "widget_ue_connectable": {}
+   },
+   "widgets_values": [
+    0.2
+   ],
+   "widgets_values_named": {
+    "value": 0.2
+   }
+  },
+  {
+   "id": 169,
+   "type": "ManualSigmas",
+   "pos": [
+    -1600,
+    4320
+   ],
+   "size": [
+    361.1441973433973,
+    99.20980579779825
+   ],
+   "flags": {},
+   "order": 7,
+   "mode": 0,
+   "inputs": [
+    {
+     "label": "sigmas",
+     "localized_name": "시그마",
+     "name": "sigmas",
+     "type": "STRING",
+     "widget": {
+      "name": "sigmas"
+     },
+     "link": null
+    }
+   ],
+   "outputs": [
+    {
+     "label": "SIGMAS",
+     "localized_name": "시그마",
+     "name": "SIGMAS",
+     "type": "SIGMAS",
+     "links": [
+      288
+     ]
+    }
+   ],
+   "properties": {
+    "Node name for S&R": "ManualSigmas",
+    "widget_ue_connectable": {}
+   },
+   "widgets_values": [
+    "1.0, 0.972973, 0.923077, 0.8, 0.571429, 0.333333, 0.0"
+   ],
+   "widgets_values_named": {
+    "sigmas": "1.0, 0.972973, 0.923077, 0.8, 0.571429, 0.333333, 0.0"
+   }
+  },
+  {
+   "id": 176,
+   "type": "ResolutionSelector",
+   "pos": [
+    -4650,
+    4860
+   ],
+   "size": [
+    270,
+    150
+   ],
+   "flags": {},
+   "order": 8,
+   "mode": 0,
+   "inputs": [
+    {
+     "label": "aspect_ratio",
+     "localized_name": "종횡비",
+     "name": "aspect_ratio",
+     "type": "COMBO",
+     "widget": {
+      "name": "aspect_ratio"
+     },
+     "link": null
+    },
+    {
+     "label": "megapixels",
+     "localized_name": "메가픽셀",
+     "name": "megapixels",
+     "type": "FLOAT",
+     "widget": {
+      "name": "megapixels"
+     },
+     "link": null
+    },
+    {
+     "label": "multiple",
+     "localized_name": "배수",
+     "name": "multiple",
+     "type": "INT",
+     "widget": {
+      "name": "multiple"
+     },
+     "link": null
+    },
+    {
+     "label": "preview",
+     "localized_name": "미리보기",
+     "name": "preview",
+     "shape": 7,
+     "type": "RESOLUTION_PREVIEW",
+     "widget": {
+      "name": "preview"
+     },
+     "link": null
+    }
+   ],
+   "outputs": [
+    {
+     "label": "width",
+     "localized_name": "너비",
+     "name": "width",
+     "type": "INT",
+     "links": [
+      302,
+      369
+     ]
+    },
+    {
+     "label": "height",
+     "localized_name": "높이",
+     "name": "height",
+     "type": "INT",
+     "links": [
+      303,
+      370
+     ]
+    }
+   ],
+   "properties": {
+    "Node name for S&R": "ResolutionSelector",
+    "widget_ue_connectable": {}
+   },
+   "widgets_values": [
+    "9:16 (Portrait Widescreen)",
+    2,
+    32
+   ],
+   "widgets_values_named": {
+    "aspect_ratio": "9:16 (Portrait Widescreen)",
+    "megapixels": 2,
+    "multiple": 32
+   }
+  },
+  {
+   "id": 189,
+   "type": "BlockSparseAttention",
+   "pos": [
+    -2700,
+    4100
+   ],
+   "size": [
+    322.1825248041972,
+    271.07371635717664
+   ],
+   "flags": {},
+   "order": 25,
+   "mode": 0,
+   "inputs": [
+    {
+     "label": "model",
+     "localized_name": "model",
+     "name": "model",
+     "type": "MODEL",
+     "link": 353
+    },
+    {
+     "label": "selection",
+     "localized_name": "selection",
+     "name": "selection",
+     "type": "COMFY_DYNAMICCOMBO_V3",
+     "widget": {
+      "name": "selection"
+     },
+     "link": null
+    },
+    {
+     "localized_name": "tau",
+     "name": "selection.tau",
+     "type": "FLOAT",
+     "widget": {
+      "name": "selection.tau"
+     },
+     "link": null
+    },
+    {
+     "label": "start_percent",
+     "localized_name": "start_percent",
+     "name": "start_percent",
+     "type": "FLOAT",
+     "widget": {
+      "name": "start_percent"
+     },
+     "link": null
+    },
+    {
+     "label": "end_percent",
+     "localized_name": "end_percent",
+     "name": "end_percent",
+     "type": "FLOAT",
+     "widget": {
+      "name": "end_percent"
+     },
+     "link": null
+    },
+    {
+     "label": "dense_blocks",
+     "localized_name": "dense_blocks",
+     "name": "dense_blocks",
+     "type": "STRING",
+     "widget": {
+      "name": "dense_blocks"
+     },
+     "link": null
+    },
+    {
+     "label": "min_tokens",
+     "localized_name": "min_tokens",
+     "name": "min_tokens",
+     "type": "INT",
+     "widget": {
+      "name": "min_tokens"
+     },
+     "link": null
+    },
+    {
+     "label": "extra_tokens",
+     "localized_name": "extra_tokens",
+     "name": "extra_tokens",
+     "type": "INT",
+     "widget": {
+      "name": "extra_tokens"
+     },
+     "link": null
+    },
+    {
+     "label": "sink_conditioning",
+     "localized_name": "sink_conditioning",
+     "name": "sink_conditioning",
+     "type": "COMBO",
+     "widget": {
+      "name": "sink_conditioning"
+     },
+     "link": null
+    },
+    {
+     "label": "verbose",
+     "localized_name": "verbose",
+     "name": "verbose",
+     "type": "BOOLEAN",
+     "widget": {
+      "name": "verbose"
+     },
+     "link": null
+    }
+   ],
+   "outputs": [
+    {
+     "label": "model",
+     "localized_name": "model",
+     "name": "model",
+     "type": "MODEL",
+     "links": [
+      348,
+      391,
+      426
+     ]
+    }
+   ],
+   "properties": {
+    "Node name for S&R": "BlockSparseAttention",
+    "widget_ue_connectable": {}
+   },
+   "widgets_values": [
+    "sol-attn",
+    1.3,
+    0.2,
+    1,
+    "",
+    12288,
+    256,
+    "exact_kv_and_rows",
+    false
+   ],
+   "widgets_values_named": {
+    "selection": "sol-attn",
+    "selection.tau": 1.3,
+    "start_percent": 0.2,
+    "end_percent": 1,
+    "dense_blocks": "",
+    "min_tokens": 12288,
+    "extra_tokens": 256,
+    "sink_conditioning": "exact_kv_and_rows",
+    "verbose": false
+   }
+  },
+  {
+   "id": 191,
+   "type": "MiniMaxH3MemoryEfficientSageAttentionPatch",
+   "pos": [
+    -2700,
+    4000
+   ],
+   "size": [
+    377.2330078125,
+    26
+   ],
+   "flags": {},
+   "order": 24,
+   "mode": 0,
+   "inputs": [
+    {
+     "label": "model",
+     "localized_name": "model",
+     "name": "model",
+     "type": "MODEL",
+     "link": 360
+    }
+   ],
+   "outputs": [
+    {
+     "label": "model",
+     "localized_name": "model",
+     "name": "model",
+     "type": "MODEL",
+     "links": [
+      353
+     ]
+    }
+   ],
+   "properties": {
+    "Node name for S&R": "MiniMaxH3MemoryEfficientSageAttentionPatch",
+    "widget_ue_connectable": {}
+   }
+  },
+  {
+   "id": 192,
+   "type": "UNETLoader",
+   "pos": [
+    -4650,
+    4000
+   ],
+   "size": [
+    640,
+    120
+   ],
+   "flags": {},
+   "order": 9,
+   "mode": 0,
+   "inputs": [
+    {
+     "label": "unet_name",
+     "localized_name": "UNet 모델 파일명",
+     "name": "unet_name",
+     "type": "COMBO",
+     "widget": {
+      "name": "unet_name"
+     },
+     "link": null
+    },
+    {
+     "label": "weight_dtype",
+     "localized_name": "가중치 데이터 유형",
+     "name": "weight_dtype",
+     "type": "COMBO",
+     "widget": {
+      "name": "weight_dtype"
+     },
+     "link": null
+    }
+   ],
+   "outputs": [
+    {
+     "label": "MODEL",
+     "localized_name": "모델",
+     "name": "MODEL",
+     "type": "MODEL",
+     "links": [
+      354
+     ]
+    }
+   ],
+   "properties": {
+    "Node name for S&R": "UNETLoader",
+    "cnr_id": "comfy-core",
+    "models": [
+     {
+      "name": "minimax_h3_fl2va_pruned_int8_convrot.safetensors",
+      "directory": "diffusion_models",
+      "url": "https://huggingface.co/Comfy-Org/MiniMax-H3/resolve/main/diffusion_models/minimax_h3_fl2va_pruned_int8_convrot.safetensors"
+     }
+    ],
+    "ver": "0.33.0",
+    "widget_ue_connectable": {}
+   },
+   "widgets_values": [
+    "minimax_h3_ref2va_pruned_int8_convrot.safetensors",
+    "default"
+   ],
+   "widgets_values_named": {
+    "unet_name": "minimax_h3_ref2va_pruned_int8_convrot.safetensors",
+    "weight_dtype": "default"
+   }
+  },
+  {
+   "id": 193,
+   "type": "LoraLoaderModelOnly",
+   "pos": [
+    -3450,
+    4000
+   ],
+   "size": [
+    640,
+    130
+   ],
+   "flags": {},
+   "order": 17,
+   "mode": 0,
+   "inputs": [
+    {
+     "label": "model",
+     "localized_name": "모델",
+     "name": "model",
+     "type": "MODEL",
+     "link": 354
+    },
+    {
+     "label": "lora_name",
+     "localized_name": "LoRA 이름",
+     "name": "lora_name",
+     "type": "COMBO",
+     "widget": {
+      "name": "lora_name"
+     },
+     "link": null
+    },
+    {
+     "label": "strength_model",
+     "localized_name": "모델 강도",
+     "name": "strength_model",
+     "type": "FLOAT",
+     "widget": {
+      "name": "strength_model"
+     },
+     "link": null
+    }
+   ],
+   "outputs": [
+    {
+     "label": "MODEL",
+     "localized_name": "모델",
+     "name": "MODEL",
+     "type": "MODEL",
+     "links": [
+      356
+     ]
+    }
+   ],
+   "properties": {
+    "Node name for S&R": "LoraLoaderModelOnly",
+    "cnr_id": "comfy-core",
+    "models": [
+     {
+      "name": "pika_h3_flex_fl2va_v1_bf16.safetensors",
+      "directory": "loras",
+      "url": "https://huggingface.co/Comfy-Org/MiniMax-H3/resolve/main/loras/pika_h3_flex_fl2va_v1_bf16.safetensors"
+     }
+    ],
+    "ver": "0.33.0",
+    "widget_ue_connectable": {}
+   },
+   "widgets_values": [
+    "pika_h3_flex_fl2va_v1_bf16.safetensors",
+    1
+   ],
+   "widgets_values_named": {
+    "lora_name": "pika_h3_flex_fl2va_v1_bf16.safetensors",
+    "strength_model": 1
+   }
+  },
+  {
+   "id": 194,
+   "type": "Note",
+   "pos": [
+    -5300,
+    4000
+   ],
+   "size": [
+    560,
+    1400
+   ],
+   "flags": {},
+   "order": 10,
+   "mode": 0,
+   "inputs": [],
+   "outputs": [],
+   "title": "워크플로우 설명 (Read Me)",
+   "properties": {},
+   "widgets_values": [
+    "Pika H3 이미지 생성 (ref2va 레퍼런스 + 얼굴 리파인)\n\n1. 워크플로우 설명\n\nMiniMax H3 영상 모델로 이미지 1장을 만든다. 5프레임만 생성해서 첫 프레임을 저장한다.\n레퍼런스 이미지(캐릭터 시트, 얼굴)로 인물을 고정하고, 얼굴만 잘라서 한 번 더 다듬은 뒤 원본에 합성한다.\n원본: github.com/amao2001/ganloss-latent-space (workflow/2026-11-03 pika h3 flex)\n커스텀 노드 + 이 워크플로우: https://github.com/gunug/comfyui-h3-av-latent-wrap\n\n흐름\nModels -> LoRAs -> attention_config -> Conditioning(레퍼런스 -> 비디오) -> Sampling -> Decode & 1 frame -> 이미지 저장\n-> Face Detect & Crop -> Face Refine (H3 img2img) -> Composite & Save\n\n특징\n- ref2va 모델: 레퍼런스 이미지를 <Picture 1>, <Picture 2> 로 프롬프트에서 부른다\n- 6스텝 lcm 샘플링, sol-attn 희소 어텐션 + Mem Eff Sage Attention 패치\n- 얼굴 리파인: YOLO 얼굴 검출 -> 1024 크롭 -> 낮은 디노이즈(약 0.45) img2img -> 색 맞춤 -> 페더 합성\n- 결과 2장 저장: image/pika_h3 (원본), image/pika_h3_refined (얼굴 리파인)\n\n2. 필요 모델 (ComfyUI models 폴더 기준)\n\ndiffusion_models\n- minimax_h3_ref2va_pruned_int8_convrot.safetensors\n  https://huggingface.co/Comfy-Org/MiniMax-H3\n\ntext_encoders\n- qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors (14.6GB)\n  https://huggingface.co/Comfy-Org/MiniMax-H3/resolve/main/text_encoders/qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors\n\nvae\n- minimax_h3_sol_vae_int8_convrot.safetensors\n  https://huggingface.co/Comfy-Org/MiniMax-H3/resolve/main/vae/minimax_h3_sol_vae_int8_convrot.safetensors\n\nloras (models/loras/minimax/)\n- pika_h3_flex_fl2va_v1_bf16 (fl2va 용. ref2va 에서 결과가 이상하면 bypass)\n- minimax_h3_turbo_v4_step600_ema (V4 EMA Turbo)\n- minimax-h3-facial-realism-closeup-cp2000 (트리거 \"Facial Realism\")\n- h3-realism-people-t2v-i2v-r2v (트리거 \"r34l1sm\")\n\nultralytics/bbox\n- face_yolov8m.pt (얼굴 검출)\n\n3. 필요 커스텀 노드\n\n- ComfyUI 본체 0.45 이상 (MiniMax H3 노드, BlockSparseAttention)\n- ComfyUI-KJNodes 1.5.4 이상 (Sage Attention 패치, Resize v2, Crop By Mask, ColorMatch)\n- ComfyUI-Impact-Pack (UltralyticsDetectorProvider, BBOX Detector, SEGS 필터)\n- PlagueKind-Nodes (AdaLN LoRA Fix)\n- comfyui-h3-av-latent-wrap (아래 2개 노드)\n  https://github.com/gunug/comfyui-h3-av-latent-wrap\n  * MiniMax H3 Wrap AV Latent: VAEEncode 결과를 H3 영상+오디오 latent 로 감싼다. 없으면 img2img 가 \"index 1 out of bounds\" 로 실패\n  * Paste Crop (xyxy bbox, feather): KJ 크롭 bbox(x0,y0,x1,y1) 그대로 원본에 페더 합성\n\n4. 간단한 사용방법\n\n1) References 그룹\n   Picture 1 = 캐릭터 시트, Picture 2 = 얼굴 사진 업로드\n2) Conditioning 의 레퍼런스 -> 비디오 노드 prompt 작성\n   예: \"Her face is exactly the face from <Picture 2> ... outfit follow <Picture 1>\"\n   LoRA 트리거 r34l1sm, Facial Realism 을 앞에 넣는다\n3) config 그룹\n   Float (duration) 0.2 = 5프레임 (이미지용 최소값). 해상도 선택기로 비율/megapixels\n4) 실행 -> image/pika_h3, image/pika_h3_refined 저장\n\n얼굴 리파인 조절\n- 리파인 시그마 첫 값: 0.45 기본. 더 다듬으려면 0.55, 원래 얼굴 유지하려면 0.35\n- 리파인 컨디셔닝 prompt 의 <Picture 1> = 얼굴 레퍼런스\n- 크롭 padding 96: 얼굴 주변 여유. 합성 feather 0.15: 경계 부드러움\n- 크롭 확인 / 리파인 얼굴 확인 미리보기로 중간 결과 확인\n\n팁\n- 무작위 노이즈 fixed 면 같은 원본에 리파인만 다시 돌릴 수 있다. 새 장면은 randomize\n- 첫 실행은 모델 로딩 때문에 느림"
+   ],
+   "widgets_values_named": {
+    "text": "Pika H3 이미지 생성 (ref2va 레퍼런스 + 얼굴 리파인)\n\n1. 워크플로우 설명\n\nMiniMax H3 영상 모델로 이미지 1장을 만든다. 5프레임만 생성해서 첫 프레임을 저장한다.\n레퍼런스 이미지(캐릭터 시트, 얼굴)로 인물을 고정하고, 얼굴만 잘라서 한 번 더 다듬은 뒤 원본에 합성한다.\n원본: github.com/amao2001/ganloss-latent-space (workflow/2026-11-03 pika h3 flex)\n커스텀 노드 + 이 워크플로우: https://github.com/gunug/comfyui-h3-av-latent-wrap\n\n흐름\nModels -> LoRAs -> attention_config -> Conditioning(레퍼런스 -> 비디오) -> Sampling -> Decode & 1 frame -> 이미지 저장\n-> Face Detect & Crop -> Face Refine (H3 img2img) -> Composite & Save\n\n특징\n- ref2va 모델: 레퍼런스 이미지를 <Picture 1>, <Picture 2> 로 프롬프트에서 부른다\n- 6스텝 lcm 샘플링, sol-attn 희소 어텐션 + Mem Eff Sage Attention 패치\n- 얼굴 리파인: YOLO 얼굴 검출 -> 1024 크롭 -> 낮은 디노이즈(약 0.45) img2img -> 색 맞춤 -> 페더 합성\n- 결과 2장 저장: image/pika_h3 (원본), image/pika_h3_refined (얼굴 리파인)\n\n2. 필요 모델 (ComfyUI models 폴더 기준)\n\ndiffusion_models\n- minimax_h3_ref2va_pruned_int8_convrot.safetensors\n  https://huggingface.co/Comfy-Org/MiniMax-H3\n\ntext_encoders\n- qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors (14.6GB)\n  https://huggingface.co/Comfy-Org/MiniMax-H3/resolve/main/text_encoders/qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors\n\nvae\n- minimax_h3_sol_vae_int8_convrot.safetensors\n  https://huggingface.co/Comfy-Org/MiniMax-H3/resolve/main/vae/minimax_h3_sol_vae_int8_convrot.safetensors\n\nloras (models/loras/minimax/)\n- pika_h3_flex_fl2va_v1_bf16 (fl2va 용. ref2va 에서 결과가 이상하면 bypass)\n- minimax_h3_turbo_v4_step600_ema (V4 EMA Turbo)\n- minimax-h3-facial-realism-closeup-cp2000 (트리거 \"Facial Realism\")\n- h3-realism-people-t2v-i2v-r2v (트리거 \"r34l1sm\")\n\nultralytics/bbox\n- face_yolov8m.pt (얼굴 검출)\n\n3. 필요 커스텀 노드\n\n- ComfyUI 본체 0.45 이상 (MiniMax H3 노드, BlockSparseAttention)\n- ComfyUI-KJNodes 1.5.4 이상 (Sage Attention 패치, Resize v2, Crop By Mask, ColorMatch)\n- ComfyUI-Impact-Pack (UltralyticsDetectorProvider, BBOX Detector, SEGS 필터)\n- PlagueKind-Nodes (AdaLN LoRA Fix)\n- comfyui-h3-av-latent-wrap (아래 2개 노드)\n  https://github.com/gunug/comfyui-h3-av-latent-wrap\n  * MiniMax H3 Wrap AV Latent: VAEEncode 결과를 H3 영상+오디오 latent 로 감싼다. 없으면 img2img 가 \"index 1 out of bounds\" 로 실패\n  * Paste Crop (xyxy bbox, feather): KJ 크롭 bbox(x0,y0,x1,y1) 그대로 원본에 페더 합성\n\n4. 간단한 사용방법\n\n1) References 그룹\n   Picture 1 = 캐릭터 시트, Picture 2 = 얼굴 사진 업로드\n2) Conditioning 의 레퍼런스 -> 비디오 노드 prompt 작성\n   예: \"Her face is exactly the face from <Picture 2> ... outfit follow <Picture 1>\"\n   LoRA 트리거 r34l1sm, Facial Realism 을 앞에 넣는다\n3) config 그룹\n   Float (duration) 0.2 = 5프레임 (이미지용 최소값). 해상도 선택기로 비율/megapixels\n4) 실행 -> image/pika_h3, image/pika_h3_refined 저장\n\n얼굴 리파인 조절\n- 리파인 시그마 첫 값: 0.45 기본. 더 다듬으려면 0.55, 원래 얼굴 유지하려면 0.35\n- 리파인 컨디셔닝 prompt 의 <Picture 1> = 얼굴 레퍼런스\n- 크롭 padding 96: 얼굴 주변 여유. 합성 feather 0.15: 경계 부드러움\n- 크롭 확인 / 리파인 얼굴 확인 미리보기로 중간 결과 확인\n\n팁\n- 무작위 노이즈 fixed 면 같은 원본에 리파인만 다시 돌릴 수 있다. 새 장면은 randomize\n- 첫 실행은 모델 로딩 때문에 느림"
+   },
+   "color": "#432",
+   "bgcolor": "#653"
+  },
+  {
+   "id": 195,
+   "type": "LoraLoaderModelOnly",
+   "pos": [
+    -3450,
+    4200
+   ],
+   "size": [
+    270,
+    82
+   ],
+   "flags": {},
+   "order": 20,
+   "mode": 0,
+   "inputs": [
+    {
+     "localized_name": "모델",
+     "name": "model",
+     "type": "MODEL",
+     "link": 356
+    },
+    {
+     "localized_name": "LoRA 이름",
+     "name": "lora_name",
+     "type": "COMBO",
+     "widget": {
+      "name": "lora_name"
+     },
+     "link": null
+    },
+    {
+     "localized_name": "모델 강도",
+     "name": "strength_model",
+     "type": "FLOAT",
+     "widget": {
+      "name": "strength_model"
+     },
+     "link": null
+    }
+   ],
+   "outputs": [
+    {
+     "localized_name": "모델",
+     "name": "MODEL",
+     "type": "MODEL",
+     "links": [
+      357
+     ]
+    }
+   ],
+   "title": "V4 EMA Turbo LoRA",
+   "properties": {
+    "Node name for S&R": "LoraLoaderModelOnly"
+   },
+   "widgets_values": [
+    "minimax\\minimax_h3_turbo_v4_step600_ema.safetensors",
+    1
+   ],
+   "widgets_values_named": {
+    "lora_name": "minimax\\minimax_h3_turbo_v4_step600_ema.safetensors",
+    "strength_model": 1
+   }
+  },
+  {
+   "id": 196,
+   "type": "LoraLoaderModelOnly",
+   "pos": [
+    -3450,
+    4352
+   ],
+   "size": [
+    270,
+    82
+   ],
+   "flags": {},
+   "order": 21,
+   "mode": 0,
+   "inputs": [
+    {
+     "localized_name": "모델",
+     "name": "model",
+     "type": "MODEL",
+     "link": 357
+    },
+    {
+     "localized_name": "LoRA 이름",
+     "name": "lora_name",
+     "type": "COMBO",
+     "widget": {
+      "name": "lora_name"
+     },
+     "link": null
+    },
+    {
+     "localized_name": "모델 강도",
+     "name": "strength_model",
+     "type": "FLOAT",
+     "widget": {
+      "name": "strength_model"
+     },
+     "link": null
+    }
+   ],
+   "outputs": [
+    {
+     "localized_name": "모델",
+     "name": "MODEL",
+     "type": "MODEL",
+     "links": [
+      358
+     ]
+    }
+   ],
+   "title": "Facial Realism LoRA",
+   "properties": {
+    "Node name for S&R": "LoraLoaderModelOnly"
+   },
+   "widgets_values": [
+    "minimax\\minimax-h3-facial-realism-closeup-cp2000.safetensors",
+    0.7
+   ],
+   "widgets_values_named": {
+    "lora_name": "minimax\\minimax-h3-facial-realism-closeup-cp2000.safetensors",
+    "strength_model": 0.7
+   }
+  },
+  {
+   "id": 197,
+   "type": "LoraLoaderModelOnly",
+   "pos": [
+    -3450,
+    4504
+   ],
+   "size": [
+    285.9869140625,
+    82
+   ],
+   "flags": {},
+   "order": 22,
+   "mode": 0,
+   "inputs": [
+    {
+     "localized_name": "모델",
+     "name": "model",
+     "type": "MODEL",
+     "link": 358
+    },
+    {
+     "localized_name": "LoRA 이름",
+     "name": "lora_name",
+     "type": "COMBO",
+     "widget": {
+      "name": "lora_name"
+     },
+     "link": null
+    },
+    {
+     "localized_name": "모델 강도",
+     "name": "strength_model",
+     "type": "FLOAT",
+     "widget": {
+      "name": "strength_model"
+     },
+     "link": null
+    }
+   ],
+   "outputs": [
+    {
+     "localized_name": "모델",
+     "name": "MODEL",
+     "type": "MODEL",
+     "links": [
+      359
+     ]
+    }
+   ],
+   "title": "Better Motion & Realism People LoRA",
+   "properties": {
+    "Node name for S&R": "LoraLoaderModelOnly"
+   },
+   "widgets_values": [
+    "minimax\\h3-realism-people-t2v-i2v-r2v.safetensors",
+    0.8
+   ],
+   "widgets_values_named": {
+    "lora_name": "minimax\\h3-realism-people-t2v-i2v-r2v.safetensors",
+    "strength_model": 0.8
+   }
+  },
+  {
+   "id": 198,
+   "type": "H3AdaLNLoRAFix",
+   "pos": [
+    -3450,
+    4656
+   ],
+   "size": [
+    270,
+    58
+   ],
+   "flags": {},
+   "order": 23,
+   "mode": 0,
+   "inputs": [
+    {
+     "localized_name": "model",
+     "name": "model",
+     "type": "MODEL",
+     "link": 359
+    },
+    {
+     "localized_name": "mode",
+     "name": "mode",
+     "type": "COMBO",
+     "widget": {
+      "name": "mode"
+     },
+     "link": null
+    }
+   ],
+   "outputs": [
+    {
+     "localized_name": "모델",
+     "name": "MODEL",
+     "type": "MODEL",
+     "links": [
+      360
+     ]
+    }
+   ],
+   "title": "AdaLN LoRA Fix",
+   "properties": {
+    "Node name for S&R": "H3AdaLNLoRAFix"
+   },
+   "widgets_values": [
+    "port"
+   ],
+   "widgets_values_named": {
+    "mode": "port"
+   }
+  },
+  {
+   "id": 201,
+   "type": "ImageFromBatch",
+   "pos": [
+    -1120,
+    4150
+   ],
+   "size": [
+    270,
+    82
+   ],
+   "flags": {},
+   "order": 29,
+   "mode": 0,
+   "inputs": [
+    {
+     "localized_name": "이미지",
+     "name": "image",
+     "type": "IMAGE",
+     "link": 364
+    },
+    {
+     "localized_name": "배치 번호",
+     "name": "batch_index",
+     "type": "INT",
+     "widget": {
+      "name": "batch_index"
+     },
+     "link": null
+    },
+    {
+     "localized_name": "길이",
+     "name": "length",
+     "type": "INT",
+     "widget": {
+      "name": "length"
+     },
+     "link": null
+    }
+   ],
+   "outputs": [
+    {
+     "localized_name": "이미지",
+     "name": "IMAGE",
+     "type": "IMAGE",
+     "links": [
+      365,
+      377,
+      380,
+      417,
+      419,
+      424
+     ]
+    }
+   ],
+   "title": "첫 프레임 1장",
+   "properties": {
+    "Node name for S&R": "ImageFromBatch"
+   },
+   "widgets_values": [
+    0,
+    1
+   ],
+   "widgets_values_named": {
+    "batch_index": 0,
+    "length": 1
+   }
+  },
+  {
+   "id": 202,
+   "type": "SaveImage",
+   "pos": [
+    -780,
+    4000
+   ],
+   "size": [
+    600,
+    900
+   ],
+   "flags": {},
+   "order": 30,
+   "mode": 0,
+   "inputs": [
+    {
+     "localized_name": "이미지",
+     "name": "images",
+     "type": "IMAGE",
+     "link": 365
+    },
+    {
+     "localized_name": "파일명 접두사",
+     "name": "filename_prefix",
+     "type": "STRING",
+     "widget": {
+      "name": "filename_prefix"
+     },
+     "link": null
+    }
+   ],
+   "outputs": [
+    {
+     "localized_name": "images",
+     "name": "images",
+     "type": "IMAGE",
+     "links": null
+    }
+   ],
+   "properties": {
+    "Node name for S&R": "SaveImage"
+   },
+   "widgets_values": [
+    "image/pika_h3"
+   ],
+   "widgets_values_named": {
+    "filename_prefix": "image/pika_h3"
+   }
+  },
+  {
+   "id": 203,
+   "type": "MiniMaxH3ReferenceToVideo",
+   "pos": [
+    -2200,
+    4000
+   ],
+   "size": [
+    482.46803727116117,
+    809.4551934118081
+   ],
+   "flags": {},
+   "order": 19,
+   "mode": 0,
+   "inputs": [
+    {
+     "localized_name": "clip",
+     "name": "clip",
+     "type": "CLIP",
+     "link": 366
+    },
+    {
+     "localized_name": "vae",
+     "name": "vae",
+     "shape": 7,
+     "type": "VAE",
+     "link": 367
+    },
+    {
+     "localized_name": "audio_vae",
+     "name": "audio_vae",
+     "shape": 7,
+     "type": "VAE",
+     "link": null
+    },
+    {
+     "localized_name": "ref_image_0",
+     "name": "ref_images.ref_image_0",
+     "shape": 7,
+     "type": "IMAGE",
+     "link": 368
+    },
+    {
+     "localized_name": "ref_image_1",
+     "name": "ref_images.ref_image_1",
+     "shape": 7,
+     "type": "IMAGE",
+     "link": 375
+    },
+    {
+     "localized_name": "ref_image_2",
+     "name": "ref_images.ref_image_2",
+     "shape": 7,
+     "type": "IMAGE",
+     "link": null
+    },
+    {
+     "localized_name": "ref_video_0",
+     "name": "ref_videos.ref_video_0",
+     "shape": 7,
+     "type": "IMAGE",
+     "link": null
+    },
+    {
+     "localized_name": "ref_video_audio_0",
+     "name": "ref_video_audios.ref_video_audio_0",
+     "shape": 7,
+     "type": "AUDIO",
+     "link": null
+    },
+    {
+     "localized_name": "ref_audio_0",
+     "name": "ref_audios.ref_audio_0",
+     "shape": 7,
+     "type": "AUDIO",
+     "link": null
+    },
+    {
+     "localized_name": "prompt",
+     "name": "prompt",
+     "type": "STRING",
+     "widget": {
+      "name": "prompt"
+     },
+     "link": null
+    },
+    {
+     "localized_name": "width",
+     "name": "width",
+     "type": "INT",
+     "widget": {
+      "name": "width"
+     },
+     "link": 369
+    },
+    {
+     "localized_name": "height",
+     "name": "height",
+     "type": "INT",
+     "widget": {
+      "name": "height"
+     },
+     "link": 370
+    },
+    {
+     "localized_name": "length",
+     "name": "length",
+     "type": "INT",
+     "widget": {
+      "name": "length"
+     },
+     "link": 371
+    },
+    {
+     "localized_name": "ref_image_size",
+     "name": "ref_image_size",
+     "type": "COMBO",
+     "widget": {
+      "name": "ref_image_size"
+     },
+     "link": null
+    }
+   ],
+   "outputs": [
+    {
+     "localized_name": "positive",
+     "name": "positive",
+     "type": "CONDITIONING",
+     "links": [
+      372
+     ]
+    },
+    {
+     "localized_name": "잠재 데이터",
+     "name": "LATENT",
+     "type": "LATENT",
+     "links": [
+      373
+     ]
+    }
+   ],
+   "title": "MiniMax H3 레퍼런스 → 비디오",
+   "properties": {
+    "Node name for S&R": "MiniMaxH3ReferenceToVideo"
+   },
+   "widgets_values": [
+    "r34l1sm, Facial Realism. A single photograph, not a character sheet: a candid Instagram photo inside a cozy party room at night, a birthday party in full swing. Wide shot showing the whole room with many people. The main subject, a young woman, stands in the middle of the room holding a glass of sparkling drink, laughing and looking at the camera. Her face is exactly the face from <Picture 2>: same facial features, eyes, nose, lips and skin. Her hairstyle and outfit follow the character sheet <Picture 1>: the multicolor patchwork shirt with the pink collar, the dark green skirt. Around her, six other clearly different people, each with a different expression: a man blowing a party horn with puffed cheeks, a woman with wide surprised eyes and an open mouth, a guy shouting and cheering with raised arms, a girl giggling with her hand over her mouth, an older man smiling warmly with crinkled eyes, a woman making a playful wink. Balloons, string lights, a banner-free wall with garlands, a table with a birthday cake, candles and snacks, confetti in the air, warm mixed lighting with a soft on-camera flash, realistic photo, 28mm lens, natural skin texture, no text or logos.",
+    1344,
+    768,
+    124,
+    "match"
+   ],
+   "widgets_values_named": {
+    "prompt": "r34l1sm, Facial Realism. A single photograph, not a character sheet: a candid Instagram photo inside a cozy party room at night, a birthday party in full swing. Wide shot showing the whole room with many people. The main subject, a young woman, stands in the middle of the room holding a glass of sparkling drink, laughing and looking at the camera. Her face is exactly the face from <Picture 2>: same facial features, eyes, nose, lips and skin. Her hairstyle and outfit follow the character sheet <Picture 1>: the multicolor patchwork shirt with the pink collar, the dark green skirt. Around her, six other clearly different people, each with a different expression: a man blowing a party horn with puffed cheeks, a woman with wide surprised eyes and an open mouth, a guy shouting and cheering with raised arms, a girl giggling with her hand over her mouth, an older man smiling warmly with crinkled eyes, a woman making a playful wink. Balloons, string lights, a banner-free wall with garlands, a table with a birthday cake, candles and snacks, confetti in the air, warm mixed lighting with a soft on-camera flash, realistic photo, 28mm lens, natural skin texture, no text or logos.",
+    "width": 1344,
+    "height": 768,
+    "length": 124,
+    "ref_image_size": "match"
+   }
+  },
+  {
+   "id": 204,
+   "type": "LoadImage",
+   "pos": [
+    -3950,
+    4560
+   ],
+   "size": [
+    400,
+    480
+   ],
+   "flags": {},
+   "order": 11,
+   "mode": 0,
+   "inputs": [
+    {
+     "label": "image",
+     "localized_name": "이미지",
+     "name": "image",
+     "type": "COMBO",
+     "widget": {
+      "name": "image"
+     },
+     "link": null
+    },
+    {
+     "label": "upload",
+     "localized_name": "업로드할 파일 선택",
+     "name": "upload",
+     "type": "IMAGEUPLOAD",
+     "widget": {
+      "name": "upload"
+     },
+     "link": null
+    }
+   ],
+   "outputs": [
+    {
+     "label": "IMAGE",
+     "localized_name": "이미지",
+     "name": "IMAGE",
+     "type": "IMAGE",
+     "links": [
+      375,
+      386,
+      420
+     ]
+    },
+    {
+     "label": "MASK",
+     "localized_name": "마스크",
+     "name": "MASK",
+     "type": "MASK",
+     "links": []
+    }
+   ],
+   "title": "레퍼런스 얼굴 (Picture 2)",
+   "properties": {
+    "Node name for S&R": "LoadImage",
+    "widget_ue_connectable": {}
+   },
+   "widgets_values": [
+    "image (49).png",
+    "image"
+   ],
+   "widgets_values_named": {
+    "image": "image (49).png",
+    "upload": "image"
+   }
+  },
+  {
+   "id": 205,
+   "type": "UltralyticsDetectorProvider",
+   "pos": [
+    50,
+    4000
+   ],
+   "size": [
+    279.0767578125,
+    78
+   ],
+   "flags": {},
+   "order": 12,
+   "mode": 0,
+   "inputs": [
+    {
+     "localized_name": "model_name",
+     "name": "model_name",
+     "type": "COMBO",
+     "widget": {
+      "name": "model_name"
+     },
+     "link": null
+    }
+   ],
+   "outputs": [
+    {
+     "localized_name": "BBOX_DETECTOR",
+     "name": "BBOX_DETECTOR",
+     "type": "BBOX_DETECTOR",
+     "links": [
+      376
+     ]
+    },
+    {
+     "localized_name": "SEGM_DETECTOR",
+     "name": "SEGM_DETECTOR",
+     "type": "SEGM_DETECTOR",
+     "links": null
+    }
+   ],
+   "title": "얼굴 검출기",
+   "properties": {
+    "Node name for S&R": "UltralyticsDetectorProvider"
+   },
+   "widgets_values": [
+    "bbox/face_yolov8m.pt"
+   ],
+   "widgets_values_named": {
+    "model_name": "bbox/face_yolov8m.pt"
+   }
+  },
+  {
+   "id": 206,
+   "type": "BboxDetectorSEGS",
+   "pos": [
+    50,
+    4150
+   ],
+   "size": [
+    400,
+    224
+   ],
+   "flags": {},
+   "order": 31,
+   "mode": 0,
+   "inputs": [
+    {
+     "localized_name": "bbox_detector",
+     "name": "bbox_detector",
+     "type": "BBOX_DETECTOR",
+     "link": 376
+    },
+    {
+     "localized_name": "image",
+     "name": "image",
+     "type": "IMAGE",
+     "link": 377
+    },
+    {
+     "localized_name": "detailer_hook",
+     "name": "detailer_hook",
+     "shape": 7,
+     "type": "DETAILER_HOOK",
+     "link": null
+    },
+    {
+     "localized_name": "threshold",
+     "name": "threshold",
+     "type": "FLOAT",
+     "widget": {
+      "name": "threshold"
+     },
+     "link": null
+    },
+    {
+     "localized_name": "dilation",
+     "name": "dilation",
+     "type": "INT",
+     "widget": {
+      "name": "dilation"
+     },
+     "link": null
+    },
+    {
+     "localized_name": "crop_factor",
+     "name": "crop_factor",
+     "type": "FLOAT",
+     "widget": {
+      "name": "crop_factor"
+     },
+     "link": null
+    },
+    {
+     "localized_name": "drop_size",
+     "name": "drop_size",
+     "type": "INT",
+     "widget": {
+      "name": "drop_size"
+     },
+     "link": null
+    },
+    {
+     "localized_name": "labels",
+     "name": "labels",
+     "type": "STRING",
+     "widget": {
+      "name": "labels"
+     },
+     "link": null
+    }
+   ],
+   "outputs": [
+    {
+     "localized_name": "SEGS",
+     "name": "SEGS",
+     "type": "SEGS",
+     "links": [
+      416,
+      418
+     ]
+    }
+   ],
+   "properties": {
+    "Node name for S&R": "BboxDetectorSEGS"
+   },
+   "widgets_values": [
+    0.5,
+    10,
+    3,
+    10,
+    "all"
+   ],
+   "widgets_values_named": {
+    "threshold": 0.5,
+    "dilation": 10,
+    "crop_factor": 3,
+    "drop_size": 10,
+    "labels": "all"
+   }
+  },
+  {
+   "id": 208,
+   "type": "SegsToCombinedMask",
+   "pos": [
+    50,
+    4670
+   ],
+   "size": [
+    217.7505859375,
+    26
+   ],
+   "flags": {},
+   "order": 34,
+   "mode": 0,
+   "inputs": [
+    {
+     "localized_name": "segs",
+     "name": "segs",
+     "type": "SEGS",
+     "link": 422
+    }
+   ],
+   "outputs": [
+    {
+     "localized_name": "마스크",
+     "name": "MASK",
+     "type": "MASK",
+     "links": [
+      381
+     ]
+    }
+   ],
+   "properties": {
+    "Node name for S&R": "SegsToCombinedMask"
+   }
+  },
+  {
+   "id": 209,
+   "type": "ImageCropByMaskAndResize",
+   "pos": [
+    550,
+    4000
+   ],
+   "size": [
+    314.999609375,
+    170
+   ],
+   "flags": {},
+   "order": 37,
+   "mode": 0,
+   "inputs": [
+    {
+     "localized_name": "image",
+     "name": "image",
+     "type": "IMAGE",
+     "link": 380
+    },
+    {
+     "localized_name": "mask",
+     "name": "mask",
+     "type": "MASK",
+     "link": 381
+    },
+    {
+     "localized_name": "base_resolution",
+     "name": "base_resolution",
+     "type": "INT",
+     "widget": {
+      "name": "base_resolution"
+     },
+     "link": null
+    },
+    {
+     "localized_name": "padding",
+     "name": "padding",
+     "type": "INT",
+     "widget": {
+      "name": "padding"
+     },
+     "link": null
+    },
+    {
+     "localized_name": "min_crop_resolution",
+     "name": "min_crop_resolution",
+     "type": "INT",
+     "widget": {
+      "name": "min_crop_resolution"
+     },
+     "link": null
+    },
+    {
+     "localized_name": "max_crop_resolution",
+     "name": "max_crop_resolution",
+     "type": "INT",
+     "widget": {
+      "name": "max_crop_resolution"
+     },
+     "link": null
+    }
+   ],
+   "outputs": [
+    {
+     "localized_name": "images",
+     "name": "images",
+     "type": "IMAGE",
+     "links": [
+      382,
+      383
+     ]
+    },
+    {
+     "localized_name": "masks",
+     "name": "masks",
+     "type": "MASK",
+     "links": null
+    },
+    {
+     "localized_name": "bbox",
+     "name": "bbox",
+     "type": "BBOX",
+     "links": [
+      414
+     ]
+    }
+   ],
+   "title": "얼굴 크롭 (1024)",
+   "properties": {
+    "Node name for S&R": "ImageCropByMaskAndResize"
+   },
+   "widgets_values": [
+    1024,
+    96,
+    128,
+    1024
+   ],
+   "widgets_values_named": {
+    "base_resolution": 1024,
+    "padding": 96,
+    "min_crop_resolution": 128,
+    "max_crop_resolution": 1024
+   }
+  },
+  {
+   "id": 210,
+   "type": "PreviewImage",
+   "pos": [
+    550,
+    4650
+   ],
+   "size": [
+    140,
+    246
+   ],
+   "flags": {},
+   "order": 38,
+   "mode": 0,
+   "inputs": [
+    {
+     "localized_name": "이미지",
+     "name": "images",
+     "type": "IMAGE",
+     "link": 382
+    }
+   ],
+   "outputs": [
+    {
+     "localized_name": "images",
+     "name": "images",
+     "type": "IMAGE",
+     "links": null
+    }
+   ],
+   "title": "크롭 확인",
+   "properties": {
+    "Node name for S&R": "PreviewImage"
+   },
+   "widgets_values": [],
+   "widgets_values_named": {}
+  },
+  {
+   "id": 211,
+   "type": "ImageResizeKJv2",
+   "pos": [
+    550,
+    4240
+   ],
+   "size": [
+    270,
+    336
+   ],
+   "flags": {},
+   "order": 39,
+   "mode": 0,
+   "inputs": [
+    {
+     "localized_name": "image",
+     "name": "image",
+     "type": "IMAGE",
+     "link": 383
+    },
+    {
+     "localized_name": "mask",
+     "name": "mask",
+     "shape": 7,
+     "type": "MASK",
+     "link": null
+    },
+    {
+     "localized_name": "width",
+     "name": "width",
+     "type": "INT",
+     "widget": {
+      "name": "width"
+     },
+     "link": null
+    },
+    {
+     "localized_name": "height",
+     "name": "height",
+     "type": "INT",
+     "widget": {
+      "name": "height"
+     },
+     "link": null
+    },
+    {
+     "localized_name": "upscale_method",
+     "name": "upscale_method",
+     "type": "COMBO",
+     "widget": {
+      "name": "upscale_method"
+     },
+     "link": null
+    },
+    {
+     "localized_name": "keep_proportion",
+     "name": "keep_proportion",
+     "type": "COMBO",
+     "widget": {
+      "name": "keep_proportion"
+     },
+     "link": null
+    },
+    {
+     "localized_name": "pad_color",
+     "name": "pad_color",
+     "type": "STRING",
+     "widget": {
+      "name": "pad_color"
+     },
+     "link": null
+    },
+    {
+     "localized_name": "crop_position",
+     "name": "crop_position",
+     "type": "COMBO",
+     "widget": {
+      "name": "crop_position"
+     },
+     "link": null
+    },
+    {
+     "localized_name": "divisible_by",
+     "name": "divisible_by",
+     "type": "INT",
+     "widget": {
+      "name": "divisible_by"
+     },
+     "link": null
+    },
+    {
+     "localized_name": "device",
+     "name": "device",
+     "shape": 7,
+     "type": "COMBO",
+     "widget": {
+      "name": "device"
+     },
+     "link": null
+    }
+   ],
+   "outputs": [
+    {
+     "localized_name": "이미지",
+     "name": "IMAGE",
+     "type": "IMAGE",
+     "links": [
+      401,
+      406
+     ]
+    },
+    {
+     "localized_name": "width",
+     "name": "width",
+     "type": "INT",
+     "links": [
+      387
+     ]
+    },
+    {
+     "localized_name": "height",
+     "name": "height",
+     "type": "INT",
+     "links": [
+      388
+     ]
+    },
+    {
+     "localized_name": "mask",
+     "name": "mask",
+     "type": "MASK",
+     "links": null
+    }
+   ],
+   "title": "크롭 32배수 리사이즈",
+   "properties": {
+    "Node name for S&R": "ImageResizeKJv2"
+   },
+   "widgets_values": [
+    1024,
+    1024,
+    "lanczos",
+    "resize",
+    "0, 0, 0",
+    "center",
+    32,
+    "cpu"
+   ],
+   "widgets_values_named": {
+    "width": 1024,
+    "height": 1024,
+    "upscale_method": "lanczos",
+    "keep_proportion": "resize",
+    "pad_color": "0, 0, 0",
+    "crop_position": "center",
+    "divisible_by": 32,
+    "device": "cpu"
+   }
+  },
+  {
+   "id": 212,
+   "type": "MiniMaxH3ReferenceToVideo",
+   "pos": [
+    1000,
+    4350
+   ],
+   "size": [
+    400,
+    344
+   ],
+   "flags": {},
+   "order": 41,
+   "mode": 0,
+   "inputs": [
+    {
+     "localized_name": "clip",
+     "name": "clip",
+     "type": "CLIP",
+     "link": 384
+    },
+    {
+     "localized_name": "vae",
+     "name": "vae",
+     "shape": 7,
+     "type": "VAE",
+     "link": 385
+    },
+    {
+     "localized_name": "audio_vae",
+     "name": "audio_vae",
+     "shape": 7,
+     "type": "VAE",
+     "link": null
+    },
+    {
+     "localized_name": "ref_image_0",
+     "name": "ref_images.ref_image_0",
+     "shape": 7,
+     "type": "IMAGE",
+     "link": 386
+    },
+    {
+     "localized_name": "ref_image_1",
+     "name": "ref_images.ref_image_1",
+     "shape": 7,
+     "type": "IMAGE",
+     "link": null
+    },
+    {
+     "localized_name": "ref_video_0",
+     "name": "ref_videos.ref_video_0",
+     "shape": 7,
+     "type": "IMAGE",
+     "link": null
+    },
+    {
+     "localized_name": "ref_video_audio_0",
+     "name": "ref_video_audios.ref_video_audio_0",
+     "shape": 7,
+     "type": "AUDIO",
+     "link": null
+    },
+    {
+     "localized_name": "ref_audio_0",
+     "name": "ref_audios.ref_audio_0",
+     "shape": 7,
+     "type": "AUDIO",
+     "link": null
+    },
+    {
+     "localized_name": "prompt",
+     "name": "prompt",
+     "type": "STRING",
+     "widget": {
+      "name": "prompt"
+     },
+     "link": null
+    },
+    {
+     "localized_name": "width",
+     "name": "width",
+     "type": "INT",
+     "widget": {
+      "name": "width"
+     },
+     "link": 387
+    },
+    {
+     "localized_name": "height",
+     "name": "height",
+     "type": "INT",
+     "widget": {
+      "name": "height"
+     },
+     "link": 388
+    },
+    {
+     "localized_name": "length",
+     "name": "length",
+     "type": "INT",
+     "widget": {
+      "name": "length"
+     },
+     "link": null
+    },
+    {
+     "localized_name": "ref_image_size",
+     "name": "ref_image_size",
+     "type": "COMBO",
+     "widget": {
+      "name": "ref_image_size"
+     },
+     "link": null
+    }
+   ],
+   "outputs": [
+    {
+     "localized_name": "positive",
+     "name": "positive",
+     "type": "CONDITIONING",
+     "links": [
+      392
+     ]
+    },
+    {
+     "localized_name": "잠재 데이터",
+     "name": "LATENT",
+     "type": "LATENT",
+     "links": null
+    }
+   ],
+   "title": "리파인 컨디셔닝 (얼굴)",
+   "properties": {
+    "Node name for S&R": "MiniMaxH3ReferenceToVideo"
+   },
+   "widgets_values": [
+    "r34l1sm, Facial Realism. Close-up portrait photo of a young woman laughing at a birthday party at night, warm string lights and soft on-camera flash, balloons bokeh behind. Her face is exactly the face from <Picture 1>: same facial features, eyes, nose, lips and skin. Sharp detailed eyes, defined eyelashes, natural skin texture with pores, realistic photo.",
+    1344,
+    768,
+    5,
+    "match"
+   ],
+   "widgets_values_named": {
+    "prompt": "r34l1sm, Facial Realism. Close-up portrait photo of a young woman laughing at a birthday party at night, warm string lights and soft on-camera flash, balloons bokeh behind. Her face is exactly the face from <Picture 1>: same facial features, eyes, nose, lips and skin. Sharp detailed eyes, defined eyelashes, natural skin texture with pores, realistic photo.",
+    "width": 1344,
+    "height": 768,
+    "length": 5,
+    "ref_image_size": "match"
+   }
+  },
+  {
+   "id": 213,
+   "type": "VAEEncode",
+   "pos": [
+    1000,
+    4130
+   ],
+   "size": [
+    162.14993286132812,
+    46
+   ],
+   "flags": {},
+   "order": 42,
+   "mode": 0,
+   "inputs": [
+    {
+     "localized_name": "픽셀 이미지",
+     "name": "pixels",
+     "type": "IMAGE",
+     "link": 402
+    },
+    {
+     "localized_name": "vae",
+     "name": "vae",
+     "type": "VAE",
+     "link": 390
+    }
+   ],
+   "outputs": [
+    {
+     "localized_name": "잠재 데이터",
+     "name": "LATENT",
+     "type": "LATENT",
+     "links": [
+      403
+     ]
+    }
+   ],
+   "title": "크롭 인코드",
+   "properties": {
+    "Node name for S&R": "VAEEncode"
+   }
+  },
+  {
+   "id": 214,
+   "type": "ManualSigmas",
+   "pos": [
+    1450,
+    4000
+   ],
+   "size": [
+    270,
+    58
+   ],
+   "flags": {},
+   "order": 13,
+   "mode": 0,
+   "inputs": [
+    {
+     "localized_name": "시그마",
+     "name": "sigmas",
+     "type": "STRING",
+     "widget": {
+      "name": "sigmas"
+     },
+     "link": null
+    }
+   ],
+   "outputs": [
+    {
+     "localized_name": "시그마",
+     "name": "SIGMAS",
+     "type": "SIGMAS",
+     "links": [
+      396
+     ]
+    }
+   ],
+   "title": "리파인 시그마 (denoise ~0.45)",
+   "properties": {
+    "Node name for S&R": "ManualSigmas"
+   },
+   "widgets_values": [
+    "0.6, 0.45, 0.3, 0.15, 0.0"
+   ],
+   "widgets_values_named": {
+    "sigmas": "0.6, 0.45, 0.3, 0.15, 0.0"
+   }
+  },
+  {
+   "id": 215,
+   "type": "BasicGuider",
+   "pos": [
+    1450,
+    4130
+   ],
+   "size": [
+    140,
+    46
+   ],
+   "flags": {},
+   "order": 43,
+   "mode": 0,
+   "inputs": [
+    {
+     "localized_name": "모델",
+     "name": "model",
+     "type": "MODEL",
+     "link": 391
+    },
+    {
+     "localized_name": "조건",
+     "name": "conditioning",
+     "type": "CONDITIONING",
+     "link": 392
+    }
+   ],
+   "outputs": [
+    {
+     "localized_name": "가이드",
+     "name": "GUIDER",
+     "type": "GUIDER",
+     "links": [
+      394
+     ]
+    }
+   ],
+   "title": "리파인 가이드",
+   "properties": {
+    "Node name for S&R": "BasicGuider"
+   }
+  },
+  {
+   "id": 216,
+   "type": "SamplerCustomAdvanced",
+   "pos": [
+    1450,
+    4250
+   ],
+   "size": [
+    180.51239624023438,
+    106
+   ],
+   "flags": {},
+   "order": 45,
+   "mode": 0,
+   "inputs": [
+    {
+     "localized_name": "노이즈",
+     "name": "noise",
+     "type": "NOISE",
+     "link": 393
+    },
+    {
+     "localized_name": "가이더",
+     "name": "guider",
+     "type": "GUIDER",
+     "link": 394
+    },
+    {
+     "localized_name": "샘플러",
+     "name": "sampler",
+     "type": "SAMPLER",
+     "link": 395
+    },
+    {
+     "localized_name": "시그마 배열",
+     "name": "sigmas",
+     "type": "SIGMAS",
+     "link": 396
+    },
+    {
+     "localized_name": "잠재 데이터",
+     "name": "latent_image",
+     "type": "LATENT",
+     "link": 404
+    }
+   ],
+   "outputs": [
+    {
+     "localized_name": "출력",
+     "name": "output",
+     "type": "LATENT",
+     "links": [
+      398
+     ]
+    },
+    {
+     "localized_name": "디노이즈 출력",
+     "name": "denoised_output",
+     "type": "LATENT",
+     "links": null
+    }
+   ],
+   "title": "리파인 샘플러",
+   "properties": {
+    "Node name for S&R": "SamplerCustomAdvanced"
+   }
+  },
+  {
+   "id": 217,
+   "type": "VAEDecode",
+   "pos": [
+    1450,
+    4430
+   ],
+   "size": [
+    140,
+    46
+   ],
+   "flags": {},
+   "order": 46,
+   "mode": 0,
+   "inputs": [
+    {
+     "localized_name": "잠재 데이터",
+     "name": "samples",
+     "type": "LATENT",
+     "link": 398
+    },
+    {
+     "localized_name": "vae",
+     "name": "vae",
+     "type": "VAE",
+     "link": 399
+    }
+   ],
+   "outputs": [
+    {
+     "localized_name": "이미지",
+     "name": "IMAGE",
+     "type": "IMAGE",
+     "links": [
+      400,
+      405
+     ]
+    }
+   ],
+   "title": "리파인 디코드",
+   "properties": {
+    "Node name for S&R": "VAEDecode"
+   }
+  },
+  {
+   "id": 218,
+   "type": "PreviewImage",
+   "pos": [
+    1450,
+    4550
+   ],
+   "size": [
+    140,
+    246
+   ],
+   "flags": {},
+   "order": 47,
+   "mode": 0,
+   "inputs": [
+    {
+     "localized_name": "이미지",
+     "name": "images",
+     "type": "IMAGE",
+     "link": 400
+    }
+   ],
+   "outputs": [
+    {
+     "localized_name": "images",
+     "name": "images",
+     "type": "IMAGE",
+     "links": null
+    }
+   ],
+   "title": "리파인 얼굴 확인",
+   "properties": {
+    "Node name for S&R": "PreviewImage"
+   },
+   "widgets_values": [],
+   "widgets_values_named": {}
+  },
+  {
+   "id": 219,
+   "type": "MiniMaxH3WrapAVLatent",
+   "pos": [
+    1000,
+    4250
+   ],
+   "size": [
+    296.3365234375,
+    26
+   ],
+   "flags": {},
+   "order": 44,
+   "mode": 0,
+   "inputs": [
+    {
+     "localized_name": "latent",
+     "name": "latent",
+     "type": "LATENT",
+     "link": 403
+    }
+   ],
+   "outputs": [
+    {
+     "localized_name": "잠재 데이터",
+     "name": "LATENT",
+     "type": "LATENT",
+     "links": [
+      404
+     ]
+    }
+   ],
+   "title": "AV latent 감싸기",
+   "properties": {
+    "Node name for S&R": "MiniMaxH3WrapAVLatent"
+   }
+  },
+  {
+   "id": 220,
+   "type": "RepeatImageBatch",
+   "pos": [
+    1000,
+    4000
+   ],
+   "size": [
+    270,
+    58
+   ],
+   "flags": {},
+   "order": 40,
+   "mode": 0,
+   "inputs": [
+    {
+     "localized_name": "이미지",
+     "name": "image",
+     "type": "IMAGE",
+     "link": 401
+    },
+    {
+     "localized_name": "개수",
+     "name": "amount",
+     "type": "INT",
+     "widget": {
+      "name": "amount"
+     },
+     "link": null
+    }
+   ],
+   "outputs": [
+    {
+     "localized_name": "이미지",
+     "name": "IMAGE",
+     "type": "IMAGE",
+     "links": [
+      402
+     ]
+    }
+   ],
+   "title": "크롭 5프레임 반복",
+   "properties": {
+    "Node name for S&R": "RepeatImageBatch"
+   },
+   "widgets_values": [
+    5
+   ],
+   "widgets_values_named": {
+    "amount": 5
+   }
+  },
+  {
+   "id": 221,
+   "type": "ImageFromBatch",
+   "pos": [
+    1850,
+    4000
+   ],
+   "size": [
+    270,
+    82
+   ],
+   "flags": {},
+   "order": 48,
+   "mode": 0,
+   "inputs": [
+    {
+     "localized_name": "이미지",
+     "name": "image",
+     "type": "IMAGE",
+     "link": 405
+    },
+    {
+     "localized_name": "배치 번호",
+     "name": "batch_index",
+     "type": "INT",
+     "widget": {
+      "name": "batch_index"
+     },
+     "link": null
+    },
+    {
+     "localized_name": "길이",
+     "name": "length",
+     "type": "INT",
+     "widget": {
+      "name": "length"
+     },
+     "link": null
+    }
+   ],
+   "outputs": [
+    {
+     "localized_name": "이미지",
+     "name": "IMAGE",
+     "type": "IMAGE",
+     "links": [
+      407
+     ]
+    }
+   ],
+   "title": "리파인 1장",
+   "properties": {
+    "Node name for S&R": "ImageFromBatch"
+   },
+   "widgets_values": [
+    0,
+    1
+   ],
+   "widgets_values_named": {
+    "batch_index": 0,
+    "length": 1
+   }
+  },
+  {
+   "id": 222,
+   "type": "ColorMatch",
+   "pos": [
+    1850,
+    4150
+   ],
+   "size": [
+    270,
+    126
+   ],
+   "flags": {},
+   "order": 49,
+   "mode": 0,
+   "inputs": [
+    {
+     "localized_name": "image_ref",
+     "name": "image_ref",
+     "type": "IMAGE",
+     "link": 406
+    },
+    {
+     "localized_name": "image_target",
+     "name": "image_target",
+     "type": "IMAGE",
+     "link": 407
+    },
+    {
+     "localized_name": "method",
+     "name": "method",
+     "type": "COMBO",
+     "widget": {
+      "name": "method"
+     },
+     "link": null
+    },
+    {
+     "localized_name": "strength",
+     "name": "strength",
+     "shape": 7,
+     "type": "FLOAT",
+     "widget": {
+      "name": "strength"
+     },
+     "link": null
+    },
+    {
+     "localized_name": "multithread",
+     "name": "multithread",
+     "shape": 7,
+     "type": "BOOLEAN",
+     "widget": {
+      "name": "multithread"
+     },
+     "link": null
+    }
+   ],
+   "outputs": [
+    {
+     "localized_name": "image",
+     "name": "image",
+     "type": "IMAGE",
+     "links": [
+      413
+     ]
+    }
+   ],
+   "title": "색 맞춤",
+   "properties": {
+    "Node name for S&R": "ColorMatch"
+   },
+   "widgets_values": [
+    "mkl",
+    1,
+    true
+   ],
+   "widgets_values_named": {
+    "method": "mkl",
+    "strength": 1,
+    "multithread": true
+   }
+  },
+  {
+   "id": 225,
+   "type": "SaveImage",
+   "pos": [
+    2200,
+    4000
+   ],
+   "size": [
+    270,
+    270
+   ],
+   "flags": {},
+   "order": 51,
+   "mode": 0,
+   "inputs": [
+    {
+     "localized_name": "이미지",
+     "name": "images",
+     "type": "IMAGE",
+     "link": 435
+    },
+    {
+     "localized_name": "파일명 접두사",
+     "name": "filename_prefix",
+     "type": "STRING",
+     "widget": {
+      "name": "filename_prefix"
+     },
+     "link": null
+    }
+   ],
+   "outputs": [
+    {
+     "localized_name": "images",
+     "name": "images",
+     "type": "IMAGE",
+     "links": null
+    }
+   ],
+   "title": "리파인 결과 저장",
+   "properties": {
+    "Node name for S&R": "SaveImage"
+   },
+   "widgets_values": [
+    "image/pika_h3_refined"
+   ],
+   "widgets_values_named": {
+    "filename_prefix": "image/pika_h3_refined"
+   }
+  },
+  {
+   "id": 226,
+   "type": "PasteCropXYXYFeather",
+   "pos": [
+    1850,
+    4350
+   ],
+   "size": [
+    250.03671875,
+    98
+   ],
+   "flags": {},
+   "order": 50,
+   "mode": 0,
+   "inputs": [
+    {
+     "localized_name": "original_image",
+     "name": "original_image",
+     "type": "IMAGE",
+     "link": 431
+    },
+    {
+     "localized_name": "crop_image",
+     "name": "crop_image",
+     "type": "IMAGE",
+     "link": 413
+    },
+    {
+     "localized_name": "bbox",
+     "name": "bbox",
+     "type": "BBOX",
+     "link": 414
+    },
+    {
+     "localized_name": "feather",
+     "name": "feather",
+     "type": "FLOAT",
+     "widget": {
+      "name": "feather"
+     },
+     "link": null
+    }
+   ],
+   "outputs": [
+    {
+     "localized_name": "이미지",
+     "name": "IMAGE",
+     "type": "IMAGE",
+     "links": [
+      435
+     ]
+    }
+   ],
+   "title": "원본에 합성 (xyxy)",
+   "properties": {
+    "Node name for S&R": "PasteCropXYXYFeather"
+   },
+   "widgets_values": [
+    0.15
+   ],
+   "widgets_values_named": {
+    "feather": 0.15
+   }
+  },
+  {
+   "id": 227,
+   "type": "SEGSPreview",
+   "pos": [
+    50,
+    4760
+   ],
+   "size": [
+    270,
+    314
+   ],
+   "flags": {},
+   "order": 32,
+   "mode": 0,
+   "inputs": [
+    {
+     "localized_name": "segs",
+     "name": "segs",
+     "type": "SEGS",
+     "link": 416
+    },
+    {
+     "localized_name": "fallback_image_opt",
+     "name": "fallback_image_opt",
+     "shape": 7,
+     "type": "IMAGE",
+     "link": 417
+    },
+    {
+     "localized_name": "alpha_mode",
+     "name": "alpha_mode",
+     "type": "BOOLEAN",
+     "widget": {
+      "name": "alpha_mode"
+     },
+     "link": null
+    },
+    {
+     "localized_name": "min_alpha",
+     "name": "min_alpha",
+     "type": "FLOAT",
+     "widget": {
+      "name": "min_alpha"
+     },
+     "link": null
+    }
+   ],
+   "outputs": [
+    {
+     "localized_name": "이미지",
+     "name": "IMAGE",
+     "shape": 6,
+     "type": "IMAGE",
+     "links": null
+    }
+   ],
+   "title": "검출된 얼굴 전체 확인",
+   "properties": {
+    "Node name for S&R": "SEGSPreview"
+   },
+   "widgets_values": [
+    true,
+    0.2
+   ],
+   "widgets_values_named": {
+    "alpha_mode": true,
+    "min_alpha": 0.2
+   }
+  },
+  {
+   "id": 228,
+   "type": "FaceSegsSplitByReference",
+   "pos": [
+    50,
+    4450
+   ],
+   "size": [
+    397.9673828125,
+    118
+   ],
+   "flags": {},
+   "order": 33,
+   "mode": 0,
+   "inputs": [
+    {
+     "localized_name": "segs",
+     "name": "segs",
+     "type": "SEGS",
+     "link": 418
+    },
+    {
+     "localized_name": "image",
+     "name": "image",
+     "type": "IMAGE",
+     "link": 419
+    },
+    {
+     "localized_name": "reference_face",
+     "name": "reference_face",
+     "type": "IMAGE",
+     "link": 420
+    },
+    {
+     "localized_name": "clip_vision",
+     "name": "clip_vision",
+     "shape": 7,
+     "type": "CLIP_VISION",
+     "link": 421
+    },
+    {
+     "localized_name": "min_face_size",
+     "name": "min_face_size",
+     "type": "INT",
+     "widget": {
+      "name": "min_face_size"
+     },
+     "link": null
+    }
+   ],
+   "outputs": [
+    {
+     "localized_name": "main_segs",
+     "name": "main_segs",
+     "type": "SEGS",
+     "links": [
+      422
+     ]
+    },
+    {
+     "localized_name": "other_segs",
+     "name": "other_segs",
+     "type": "SEGS",
+     "links": [
+      434
+     ]
+    },
+    {
+     "localized_name": "report",
+     "name": "report",
+     "type": "STRING",
+     "links": [
+      423
+     ]
+    }
+   ],
+   "title": "주인공 얼굴 선택 (레퍼런스 유사도)",
+   "properties": {
+    "Node name for S&R": "FaceSegsSplitByReference"
+   },
+   "widgets_values": [
+    48
+   ],
+   "widgets_values_named": {
+    "min_face_size": 48
+   }
+  },
+  {
+   "id": 229,
+   "type": "CLIPVisionLoader",
+   "pos": [
+    50,
+    5100
+   ],
+   "size": [
+    270,
+    58
+   ],
+   "flags": {},
+   "order": 14,
+   "mode": 0,
+   "inputs": [
+    {
+     "localized_name": "CLIP 파일명",
+     "name": "clip_name",
+     "type": "COMBO",
+     "widget": {
+      "name": "clip_name"
+     },
+     "link": null
+    }
+   ],
+   "outputs": [
+    {
+     "localized_name": "CLIP_VISION",
+     "name": "CLIP_VISION",
+     "type": "CLIP_VISION",
+     "links": [
+      421
+     ]
+    }
+   ],
+   "title": "CLIP Vision (얼굴 유사도)",
+   "properties": {
+    "Node name for S&R": "CLIPVisionLoader"
+   },
+   "widgets_values": [
+    "clip_vision_h.safetensors"
+   ],
+   "widgets_values_named": {
+    "clip_name": "clip_vision_h.safetensors"
+   }
+  },
+  {
+   "id": 230,
+   "type": "H3RefineFaces",
+   "pos": [
+    500,
+    5100
+   ],
+   "size": [
+    429.816015625,
+    352
+   ],
+   "flags": {},
+   "order": 35,
+   "mode": 0,
+   "inputs": [
+    {
+     "localized_name": "image",
+     "name": "image",
+     "type": "IMAGE",
+     "link": 424
+    },
+    {
+     "localized_name": "segs",
+     "name": "segs",
+     "type": "SEGS",
+     "link": 434
+    },
+    {
+     "localized_name": "model",
+     "name": "model",
+     "type": "MODEL",
+     "link": 426
+    },
+    {
+     "localized_name": "clip",
+     "name": "clip",
+     "type": "CLIP",
+     "link": 427
+    },
+    {
+     "localized_name": "vae",
+     "name": "vae",
+     "type": "VAE",
+     "link": 428
+    },
+    {
+     "localized_name": "sampler",
+     "name": "sampler",
+     "type": "SAMPLER",
+     "link": 429
+    },
+    {
+     "localized_name": "sigmas",
+     "name": "sigmas",
+     "type": "SIGMAS",
+     "link": 430
+    },
+    {
+     "localized_name": "noise_seed",
+     "name": "noise_seed",
+     "type": "INT",
+     "widget": {
+      "name": "noise_seed"
+     },
+     "link": null
+    },
+    {
+     "localized_name": "prompt",
+     "name": "prompt",
+     "type": "STRING",
+     "widget": {
+      "name": "prompt"
+     },
+     "link": null
+    },
+    {
+     "localized_name": "resolution",
+     "name": "resolution",
+     "type": "INT",
+     "widget": {
+      "name": "resolution"
+     },
+     "link": null
+    },
+    {
+     "localized_name": "padding",
+     "name": "padding",
+     "type": "FLOAT",
+     "widget": {
+      "name": "padding"
+     },
+     "link": null
+    },
+    {
+     "localized_name": "feather",
+     "name": "feather",
+     "type": "FLOAT",
+     "widget": {
+      "name": "feather"
+     },
+     "link": null
+    },
+    {
+     "localized_name": "color_match",
+     "name": "color_match",
+     "type": "BOOLEAN",
+     "widget": {
+      "name": "color_match"
+     },
+     "link": null
+    }
+   ],
+   "outputs": [
+    {
+     "localized_name": "이미지",
+     "name": "IMAGE",
+     "type": "IMAGE",
+     "links": [
+      431
+     ]
+    }
+   ],
+   "title": "나머지 얼굴 리파인 (레퍼런스 없음)",
+   "properties": {
+    "Node name for S&R": "H3RefineFaces"
+   },
+   "widgets_values": [
+    0,
+    "fixed",
+    "Close-up portrait photo of a person at a birthday party, keep the exact same face, same identity and the same facial expression, sharp detailed eyes, defined eyelashes, natural skin texture with pores, realistic photo.",
+    768,
+    0.6,
+    0.15,
+    true
+   ],
+   "widgets_values_named": {
+    "noise_seed": 0,
+    "control_after_generate": "fixed",
+    "prompt": "Close-up portrait photo of a person at a birthday party, keep the exact same face, same identity and the same facial expression, sharp detailed eyes, defined eyelashes, natural skin texture with pores, realistic photo.",
+    "resolution": 768,
+    "padding": 0.6,
+    "feather": 0.15,
+    "color_match": true
+   }
+  },
+  {
+   "id": 231,
+   "type": "ManualSigmas",
+   "pos": [
+    50,
+    5220
+   ],
+   "size": [
+    270,
+    58
+   ],
+   "flags": {},
+   "order": 15,
+   "mode": 0,
+   "inputs": [
+    {
+     "localized_name": "시그마",
+     "name": "sigmas",
+     "type": "STRING",
+     "widget": {
+      "name": "sigmas"
+     },
+     "link": null
+    }
+   ],
+   "outputs": [
+    {
+     "localized_name": "시그마",
+     "name": "SIGMAS",
+     "type": "SIGMAS",
+     "links": [
+      430
+     ]
+    }
+   ],
+   "title": "나머지 얼굴 시그마 (denoise ~0.3)",
+   "properties": {
+    "Node name for S&R": "ManualSigmas"
+   },
+   "widgets_values": [
+    "0.45, 0.3, 0.15, 0.0"
+   ],
+   "widgets_values_named": {
+    "sigmas": "0.45, 0.3, 0.15, 0.0"
+   }
+  },
+  {
+   "id": 232,
+   "type": "PreviewAny",
+   "pos": [
+    50,
+    5350
+   ],
+   "size": [
+    210,
+    122
+   ],
+   "flags": {},
+   "order": 36,
+   "mode": 0,
+   "inputs": [
+    {
+     "localized_name": "소스",
+     "name": "source",
+     "type": "*",
+     "link": 423
+    }
+   ],
+   "outputs": [
+    {
+     "localized_name": "문자열",
+     "name": "STRING",
+     "type": "STRING",
+     "links": null
+    }
+   ],
+   "title": "얼굴 선택 리포트",
+   "properties": {
+    "Node name for S&R": "PreviewAny"
+   },
+   "widgets_values": [],
+   "widgets_values_named": {}
+  }
+ ],
+ "links": [
+  [
+   271,
+   154,
+   0,
+   157,
+   1,
+   "VAE"
+  ],
+  [
+   272,
+   163,
+   0,
+   159,
+   0,
+   "NOISE"
+  ],
+  [
+   273,
+   160,
+   0,
+   159,
+   1,
+   "GUIDER"
+  ],
+  [
+   274,
+   158,
+   0,
+   159,
+   2,
+   "SAMPLER"
+  ],
+  [
+   279,
+   162,
+   0,
+   165,
+   0,
+   "CLIP"
+  ],
+  [
+   280,
+   154,
+   0,
+   165,
+   1,
+   "VAE"
+  ],
+  [
+   284,
+   166,
+   1,
+   165,
+   7,
+   "INT"
+  ],
+  [
+   285,
+   159,
+   0,
+   157,
+   0,
+   "LATENT"
+  ],
+  [
+   288,
+   169,
+   0,
+   159,
+   3,
+   "SIGMAS"
+  ],
+  [
+   302,
+   176,
+   0,
+   165,
+   5,
+   "INT"
+  ],
+  [
+   303,
+   176,
+   1,
+   165,
+   6,
+   "INT"
+  ],
+  [
+   348,
+   189,
+   0,
+   160,
+   0,
+   "MODEL"
+  ],
+  [
+   354,
+   192,
+   0,
+   193,
+   0,
+   "MODEL"
+  ],
+  [
+   356,
+   193,
+   0,
+   195,
+   0,
+   "MODEL"
+  ],
+  [
+   357,
+   195,
+   0,
+   196,
+   0,
+   "MODEL"
+  ],
+  [
+   358,
+   196,
+   0,
+   197,
+   0,
+   "MODEL"
+  ],
+  [
+   359,
+   197,
+   0,
+   198,
+   0,
+   "MODEL"
+  ],
+  [
+   360,
+   198,
+   0,
+   191,
+   0,
+   "MODEL"
+  ],
+  [
+   364,
+   157,
+   0,
+   201,
+   0,
+   "IMAGE"
+  ],
+  [
+   365,
+   201,
+   0,
+   202,
+   0,
+   "IMAGE"
+  ],
+  [
+   372,
+   203,
+   0,
+   160,
+   1,
+   "CONDITIONING"
+  ],
+  [
+   373,
+   203,
+   1,
+   159,
+   4,
+   "LATENT"
+  ],
+  [
+   374,
+   147,
+   0,
+   165,
+   2,
+   "IMAGE"
+  ],
+  [
+   376,
+   205,
+   0,
+   206,
+   0,
+   "BBOX_DETECTOR"
+  ],
+  [
+   377,
+   201,
+   0,
+   206,
+   1,
+   "IMAGE"
+  ],
+  [
+   380,
+   201,
+   0,
+   209,
+   0,
+   "IMAGE"
+  ],
+  [
+   381,
+   208,
+   0,
+   209,
+   1,
+   "MASK"
+  ],
+  [
+   382,
+   209,
+   0,
+   210,
+   0,
+   "IMAGE"
+  ],
+  [
+   383,
+   209,
+   0,
+   211,
+   0,
+   "IMAGE"
+  ],
+  [
+   390,
+   154,
+   0,
+   213,
+   1,
+   "VAE"
+  ],
+  [
+   391,
+   189,
+   0,
+   215,
+   0,
+   "MODEL"
+  ],
+  [
+   392,
+   212,
+   0,
+   215,
+   1,
+   "CONDITIONING"
+  ],
+  [
+   393,
+   163,
+   0,
+   216,
+   0,
+   "NOISE"
+  ],
+  [
+   394,
+   215,
+   0,
+   216,
+   1,
+   "GUIDER"
+  ],
+  [
+   395,
+   158,
+   0,
+   216,
+   2,
+   "SAMPLER"
+  ],
+  [
+   396,
+   214,
+   0,
+   216,
+   3,
+   "SIGMAS"
+  ],
+  [
+   398,
+   216,
+   0,
+   217,
+   0,
+   "LATENT"
+  ],
+  [
+   399,
+   154,
+   0,
+   217,
+   1,
+   "VAE"
+  ],
+  [
+   400,
+   217,
+   0,
+   218,
+   0,
+   "IMAGE"
+  ],
+  [
+   401,
+   211,
+   0,
+   220,
+   0,
+   "IMAGE"
+  ],
+  [
+   402,
+   220,
+   0,
+   213,
+   0,
+   "IMAGE"
+  ],
+  [
+   403,
+   213,
+   0,
+   219,
+   0,
+   "LATENT"
+  ],
+  [
+   404,
+   219,
+   0,
+   216,
+   4,
+   "LATENT"
+  ],
+  [
+   405,
+   217,
+   0,
+   221,
+   0,
+   "IMAGE"
+  ],
+  [
+   406,
+   211,
+   0,
+   222,
+   0,
+   "IMAGE"
+  ],
+  [
+   407,
+   221,
+   0,
+   222,
+   1,
+   "IMAGE"
+  ],
+  [
+   413,
+   222,
+   0,
+   226,
+   1,
+   "IMAGE"
+  ],
+  [
+   414,
+   209,
+   2,
+   226,
+   2,
+   "BBOX"
+  ],
+  [
+   294,
+   167,
+   0,
+   166,
+   0,
+   "FLOAT"
+  ],
+  [
+   384,
+   162,
+   0,
+   212,
+   0,
+   "CLIP"
+  ],
+  [
+   385,
+   154,
+   0,
+   212,
+   1,
+   "VAE"
+  ],
+  [
+   386,
+   204,
+   0,
+   212,
+   3,
+   "IMAGE"
+  ],
+  [
+   366,
+   162,
+   0,
+   203,
+   0,
+   "CLIP"
+  ],
+  [
+   367,
+   154,
+   0,
+   203,
+   1,
+   "VAE"
+  ],
+  [
+   368,
+   147,
+   0,
+   203,
+   3,
+   "IMAGE"
+  ],
+  [
+   375,
+   204,
+   0,
+   203,
+   4,
+   "IMAGE"
+  ],
+  [
+   369,
+   176,
+   0,
+   203,
+   10,
+   "INT"
+  ],
+  [
+   370,
+   176,
+   1,
+   203,
+   11,
+   "INT"
+  ],
+  [
+   371,
+   166,
+   1,
+   203,
+   12,
+   "INT"
+  ],
+  [
+   387,
+   211,
+   1,
+   212,
+   9,
+   "INT"
+  ],
+  [
+   388,
+   211,
+   2,
+   212,
+   10,
+   "INT"
+  ],
+  [
+   353,
+   191,
+   0,
+   189,
+   0,
+   "MODEL"
+  ],
+  [
+   416,
+   206,
+   0,
+   227,
+   0,
+   "SEGS"
+  ],
+  [
+   417,
+   201,
+   0,
+   227,
+   1,
+   "IMAGE"
+  ],
+  [
+   418,
+   206,
+   0,
+   228,
+   0,
+   "SEGS"
+  ],
+  [
+   419,
+   201,
+   0,
+   228,
+   1,
+   "IMAGE"
+  ],
+  [
+   420,
+   204,
+   0,
+   228,
+   2,
+   "IMAGE"
+  ],
+  [
+   421,
+   229,
+   0,
+   228,
+   3,
+   "CLIP_VISION"
+  ],
+  [
+   422,
+   228,
+   0,
+   208,
+   0,
+   "SEGS"
+  ],
+  [
+   423,
+   228,
+   2,
+   232,
+   0,
+   "STRING"
+  ],
+  [
+   424,
+   201,
+   0,
+   230,
+   0,
+   "IMAGE"
+  ],
+  [
+   426,
+   189,
+   0,
+   230,
+   2,
+   "MODEL"
+  ],
+  [
+   427,
+   162,
+   0,
+   230,
+   3,
+   "CLIP"
+  ],
+  [
+   428,
+   154,
+   0,
+   230,
+   4,
+   "VAE"
+  ],
+  [
+   429,
+   158,
+   0,
+   230,
+   5,
+   "SAMPLER"
+  ],
+  [
+   430,
+   231,
+   0,
+   230,
+   6,
+   "SIGMAS"
+  ],
+  [
+   431,
+   230,
+   0,
+   226,
+   0,
+   "IMAGE"
+  ],
+  [
+   434,
+   228,
+   1,
+   230,
+   1,
+   "SEGS"
+  ],
+  [
+   435,
+   226,
+   0,
+   225,
+   0,
+   "IMAGE"
+  ]
+ ],
+ "groups": [
+  {
+   "id": 8,
+   "title": "Sampling",
+   "bounding": [
+    -1630,
+    3930,
+    430,
+    890
+   ],
+   "color": "#3f789e",
+   "flags": {}
+  },
+  {
+   "id": 7,
+   "title": "Models",
+   "bounding": [
+    -4680,
+    3930,
+    700,
+    640
+   ],
+   "color": "#3f789e",
+   "flags": {}
+  },
+  {
+   "id": 9,
+   "title": "Conditioning",
+   "bounding": [
+    -2230,
+    3930,
+    540,
+    1570
+   ],
+   "color": "#3f789e",
+   "flags": {}
+  },
+  {
+   "id": 10,
+   "title": "Decode & 1 frame",
+   "bounding": [
+    -1150,
+    3930,
+    330,
+    370
+   ],
+   "color": "#3f789e",
+   "flags": {}
+  },
+  {
+   "id": 11,
+   "title": "config",
+   "bounding": [
+    -4680,
+    4630,
+    700,
+    520
+   ],
+   "color": "#3f789e",
+   "flags": {}
+  },
+  {
+   "id": 12,
+   "title": "attention_config",
+   "bounding": [
+    -2730,
+    3930,
+    440,
+    510
+   ],
+   "color": "#3f789e",
+   "flags": {}
+  },
+  {
+   "id": 13,
+   "title": "LoRAs",
+   "bounding": [
+    -3480,
+    3930,
+    700,
+    850
+   ],
+   "color": "#8a5a9e",
+   "flags": {}
+  },
+  {
+   "id": 15,
+   "title": "References",
+   "bounding": [
+    -3980,
+    3930,
+    460,
+    1180
+   ],
+   "color": "#3f789e",
+   "flags": {}
+  },
+  {
+   "id": 16,
+   "title": "Face Detect & Crop",
+   "bounding": [
+    20,
+    3930,
+    880,
+    1050
+   ],
+   "color": "#8a5a9e",
+   "flags": {}
+  },
+  {
+   "id": 17,
+   "title": "Face Refine (H3 img2img)",
+   "bounding": [
+    970,
+    3930,
+    830,
+    900
+   ],
+   "color": "#8a5a9e",
+   "flags": {}
+  },
+  {
+   "id": 18,
+   "title": "Composite & Save",
+   "bounding": [
+    1820,
+    3930,
+    680,
+    560
+   ],
+   "color": "#8a5a9e",
+   "flags": {}
+  }
+ ],
+ "config": {},
+ "extra": {
+  "VHS_KeepIntermediate": true,
+  "links_added_by_ue": [],
+  "KKvideo_latentpreview": false,
+  "VHS_MetadataImage": true,
+  "ue_links": [],
+  "KKvideo_latentpreviewrate": 0,
+  "pixaromaGroups": [],
+  "0246.VERSION": [
+   0,
+   0,
+   4
+  ],
+  "VHS_latentpreviewrate": 0,
+  "frontendVersion": "1.57.6",
+  "VHS_latentpreview": false,
+  "ds": {
+   "scale": 0.1498914092664093,
+   "offset": [
+    8738.113982129918,
+    -1714.186589390647
+   ]
+  },
+  "comfyui_mcp": {
+   "workflow_uuid": "cdbaf74d-c385-4851-9120-c24e52bf26bb",
+   "workflow_path": "workflows/00_image_pika_h3_flex_fl2va_single.json"
+  }
+ },
+ "version": 0.4
+}
