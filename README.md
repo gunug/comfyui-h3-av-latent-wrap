@@ -43,6 +43,46 @@ Use it on `other_segs` so the other people keep their own faces and only get sha
 - `sigmas`: a low start sigma keeps the face, for example `0.45, 0.3, 0.15, 0.0`.
 - `resolution` (long side of each crop), `padding`, `feather`, `color_match`.
 
+### Face Crop (largest SEGS bbox)
+`FaceCropLargestSEGS` · category `ImpactPack/Util`
+
+Crops the largest detected face (Impact Pack SEGS bbox) out of the original image, with a margin (`padding`, fraction of the bbox's longer side).
+
+### Face Similarity (InsightFace + CLIP Vision)
+`FaceSimilarityInsightFaceCLIP` · category `image/analysis`
+
+Two face crops → four cosine scores and a text report.
+
+- **Arc**: InsightFace `buffalo_l` (`w600k_r50.onnx`). Face identity.
+- **Glint**: InsightFace `antelopev2` (`glintr100.onnx`), optional. A second face identity score.
+- **CLIP**: `CLIP_VISION` (for example `clip_vision_h.safetensors`). General look: hair, light, style. Not identity.
+- **DINO**: optional second `CLIP_VISION` input with DINOv3 (`dino_v3_vit_h.safetensors`). Fine visual look. Not identity.
+
+Faces are aligned with the 5 landmarks of `det_10g.onnx` before Arc / Glint. Tight crops get a border first, because SCRFD misses faces that fill the frame.
+The ONNX models run with `onnxruntime`. The `insightface` Python package is not needed.
+
+### Face Similarity Grid (all faces vs reference)
+`FaceSimilarityGrid` · category `image/analysis`
+
+Compares every face in SEGS with one reference face. It returns a tiled image with the scores drawn on each tile, and a text report (bbox, size, scores).
+
+- Colors (rough, not official): Arc / Glint ≥ 0.5 green, 0.3–0.5 yellow, < 0.3 red. CLIP ≥ 0.75 / 0.55. DINO ≥ 0.6 / 0.4.
+- `BEST` and the tile border use the mean of Arc and Glint.
+- `NO landmarks` (red header) means alignment failed and the score is unreliable.
+- `padding`, `tile_size`, `columns`.
+
+Face similarity models (folder under `ComfyUI/models`):
+
+| File | Folder |
+| --- | --- |
+| [face_yolov8m.pt](https://huggingface.co/Bingsu/adetailer/resolve/main/face_yolov8m.pt) | `ultralytics/bbox` |
+| [det_10g.onnx](https://huggingface.co/public-data/insightface/resolve/main/models/buffalo_l/det_10g.onnx), [w600k_r50.onnx](https://huggingface.co/public-data/insightface/resolve/main/models/buffalo_l/w600k_r50.onnx) | `insightface/models/buffalo_l` |
+| [glintr100.onnx](https://huggingface.co/DIAMONIK7777/antelopev2/resolve/main/glintr100.onnx) (optional) | `insightface/models/antelopev2` |
+| [clip_vision_h.safetensors](https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/resolve/main/split_files/clip_vision/clip_vision_h.safetensors) | `clip_vision` |
+| [dino_v3_vit_h.safetensors](https://huggingface.co/VAST-AI/TripoSplat/resolve/main/clip_vision/dino_v3_vit_h.safetensors) (optional) | `clip_vision` |
+
+The InsightFace pretrained models are released for **non-commercial research only** ([InsightFace license](https://github.com/deepinsight/insightface#license)).
+
 ## Example workflow
 
 `example_workflows/pika_h3_ref2va_face_refine.json` is a MiniMax H3 ref2va still image with a face refine pass.
@@ -60,7 +100,10 @@ Use it on `other_segs` so the other people keep their own faces and only get sha
 - Faces smaller than 48 px are skipped.
 - Extra model: `clip_vision_h.safetensors` in `models/clip_vision`.
 
-Required: ComfyUI ≥ 0.45, ComfyUI-KJNodes ≥ 1.5.4, ComfyUI-Impact-Pack, and PlagueKind-Nodes (AdaLN LoRA Fix).
+`example_workflows/face_similarity_insightface_clip_dino.json` measures how much a generated image looks like a reference face.
+Image A is the reference face and image B is the image to check. It gives a 1:1 report (largest faces) and a grid of every face in B. Needs ComfyUI-Impact-Pack and ComfyUI-Impact-Subpack.
+
+Required (face refine): ComfyUI ≥ 0.45, ComfyUI-KJNodes ≥ 1.5.4, ComfyUI-Impact-Pack, and PlagueKind-Nodes (AdaLN LoRA Fix).
 The models are from [Comfy-Org/MiniMax-H3](https://huggingface.co/Comfy-Org/MiniMax-H3): the `ref2va` pruned UNET, the Qwen3-VL text encoder, and the sol VAE.
 
 ## Install
@@ -69,7 +112,8 @@ The models are from [Comfy-Org/MiniMax-H3](https://huggingface.co/Comfy-Org/Mini
 cd ComfyUI/custom_nodes
 git clone https://github.com/gunug/comfyui-h3-av-latent-wrap
 ```
-Restart ComfyUI after cloning. There are no extra Python dependencies.
+Restart ComfyUI after cloning. The face refine nodes need no extra Python packages.
+The face similarity nodes need `onnxruntime` and `opencv-python` (`pip install onnxruntime opencv-python` in the ComfyUI Python).
 
 ## License
 MIT
